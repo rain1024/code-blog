@@ -1,0 +1,29 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet" href="{{ "/scripts/bower_components/fontawesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/theme.css" | prepend: site.baseurl }}">
+	<!-- Theme -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,vietnamese" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ "/scripts/bower_components/theme/main.css" | prepend: site.baseurl }}">
+	
+
+	<script src="{{ "/scripts/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/scripts/bower_components/underscore/underscore.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/scripts/bower_components/underscore.string/dist/underscore.string.min.js" | prepend: site.baseurl }}">
+	</script>
+	<!-- toc -->
+    <link rel="stylesheet" href="{{ "/scripts/bower_components/toc/toc.css" | prepend: site.baseurl }}">
+	<script src="{{ "/scripts/bower_components/toc/toc.js" | prepend: site.baseurl }}"></script>
+	<!-- amazing -->
+    <link rel="stylesheet" href="{{ "/scripts/bower_components/amazing/style.css" | prepend: site.baseurl }}">
+	<script src="{{ "/scripts/bower_components/amazing/script.js" | prepend: site.baseurl }}"></script>
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+</head>

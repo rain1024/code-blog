@@ -1,0 +1,51 @@
+/*-----------------------------------------------------------------------------
+ *                                      POST 
+ *----------------------------------------------------------------------------*/
+
+.post {
+	@extend .full;
+	background-color: $color-light;
+}
+
+/*-----------------------------------------------------------------------------
+ *                                     HEADER 
+ *----------------------------------------------------------------------------*/
+
+.post-header {
+	@extend .row-2;
+	width		: 100%;
+	text-align	: center;
+	z-index		: 200;
+	background	: $color-dark-lighter;
+	color		: $color-light;
+	padding 	: $height-vertical-padding-top-layout 0px;
+
+	height		: 12%;
+}
+
+.post-title {
+	font-weight: bold;
+}
+
+.post-meta {
+	color: $color-light;
+}
+
+/*-----------------------------------------------------------------------------
+ *                                     CONTENT 
+ *----------------------------------------------------------------------------*/
+
+.post-content {
+	position: absolute;
+
+	top: $top-post-content;
+	left: $width-post-toc;
+	width: $width-post-content;
+	height: $height-post-content;
+
+	padding: $padding-post-content;
+
+	border-left: solid 2px $color-dark-lighter-x2;
+	overflow: auto;
+	background-color: $color-light;
+}

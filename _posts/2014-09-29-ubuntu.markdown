@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Ubuntu"
+date:   2014-09-29 09:27:15
+categories: ubuntu 
+---
+
+# How do I  

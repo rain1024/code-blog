@@ -1,0 +1,127 @@
+/*-----------------------------------------------------------------------------
+ *                                     COLOR 
+ *----------------------------------------------------------------------------*/
+/* white */
+/*-----------------------------------------------------------------------------
+ *                                      GENERAL 
+ *----------------------------------------------------------------------------*/
+body {
+  background: #efefef;
+  overflow: hidden;
+  font-family: "Josefin Slab", serif; }
+
+/*-----------------------------------------------------------------------------
+ *                                      PADDING 
+ *----------------------------------------------------------------------------*/
+.page-content {
+  padding: 0px; }
+
+/*-----------------------------------------------------------------------------
+ *                                      UTILITIES 
+ *----------------------------------------------------------------------------*/
+.box-shadow, .post-content, .toc {
+  box-shadow: 0px 2px 10px #b7b7b7;
+  padding: 30px;
+  background-color: #FFFFFF; }
+
+/*-----------------------------------------------------------------------------
+ *                                       HEADER
+ *----------------------------------------------------------------------------*/
+.site-header {
+  border-top: 5px solid #A91700;
+  box-shadow: 0px 2px 1px #b7b7b7;
+  background: black;
+  display: none; }
+
+.site-header a, .site-title {
+  color: #FFFFFF !important; }
+
+/*-----------------------------------------------------------------------------
+ *                                      POST 
+ *----------------------------------------------------------------------------*/
+.post {
+  width: 100%;
+  left: 0px;
+  position: absolute; }
+
+.post-content {
+  position: relative;
+  left: 30%;
+  top: 160px;
+  width: 64%; }
+
+.post-header {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  z-index: 200;
+  background: #202020;
+  color: #FFFFFF;
+  padding: 20px 0px; }
+
+.post-title {
+  font-weight: bold; }
+
+.post-meta {
+  color: #FFFFFF; }
+
+/*-----------------------------------------------------------------------------
+ *                                     TOC 
+ *----------------------------------------------------------------------------*/
+.toc {
+  top: 160px;
+  background-color: #FFFFFF; }
+
+.toc h3 {
+  color: black;
+  font-weight: bold; }
+
+@media screen and (max-width: 1024px) {
+  .toc {
+    display: none; } }
+.toc {
+  position: fixed;
+  left: 20px;
+  width: 300px;
+  overflow: auto; }
+
+.toc > h3 {
+  padding: 0px 25px; }
+
+.toc > ul > li {
+  list-style-type: none; }
+
+.toc > ul > li.toc-h2 {
+  border-bottom: solid 1px #e2e2e2;
+  padding: 4px 0px; }
+
+.toc > ul > li.toc-h2 > a {
+  font-size: 15px;
+  font-weight: bold; }
+
+.toc > ul > li.toc-h3 {
+  margin: 4px 0px;
+  font-size: 13px; }
+
+.toc::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: #FFFFFF; }
+
+.toc::-webkit-scrollbar {
+  width: 6px;
+  background-color: #FFFFFF; }
+
+.toc::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #202020; }
+
+.toc > ul > li > a {
+  color: black; }
+
+/*-----------------------------------------------------------------------------
+ *                                    Link 
+ *----------------------------------------------------------------------------*/
+.post-content a {
+  color: black !important; }

@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "Vim"
+date:   2014-09-29 17:11:15
+categories: vim 
+---
+
+## Vim
+
+## Install
+
+**Install**
+
+*with xterm_clipboard support* (check with `vim --version`)
+
+```sh
+sudo apt-get install vim-gnome
+``` 
+
+## Copy and Paste
+With `terminator` and `xterm_clipboard`
+
+Copy: `Ctrl-Shift-C`
+
+Paste: `Ctrl-Shfit-V`
+
+## Navigation
+
+### Tabs
+
+#### Navigation
+
+| Shortcuts         | Functions                			 |
+|-------------------|------------------------------------|
+| `:tabs`           | list all tabs            			 |
+| `:tabm 0`         | move current tab to first			 |
+| `:tabm`           | move current tab to last 			 |
+| `:tabm {i}`       | move current tab to position i + 1 |
+| `:tabn`           | go to next tab           			 |
+| `:tabp`           | go to previous tab       			 |
+| `:tabfirst`       | go to first tab          			 |
+| `:tablast`        | go to last tab           			 |
+

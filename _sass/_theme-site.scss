@@ -1,0 +1,14 @@
+/*-----------------------------------------------------------------------------
+ *                                       HEADER
+ *----------------------------------------------------------------------------*/
+
+.site-header {
+	border-top: 5px solid $color-background-darker;
+	box-shadow: 0px 2px 1px rgb(183, 183, 183);
+	background: $color-dark;
+	display: none;
+}
+
+.site-header a, .site-title {
+	color: $color-light !important;
+}

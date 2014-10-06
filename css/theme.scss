@@ -1,0 +1,92 @@
+---
+---
+
+/*-----------------------------------------------------------------------------
+ *                                     COLOR 
+ *----------------------------------------------------------------------------*/
+$color-base				: #FF3D1F;
+
+$color-background		: #FF3D1F;
+$color-background-darker: #A91700;
+$color-text				: #BCF26D;
+$color-lighter			: #FF8673;
+$color					: #FF3D1F;
+$color-border-dark		: rgb(219, 219, 219);
+
+$color-light			: #FFFFFF;
+$color-gray				: rgb(239, 239, 239);
+$color-dark				: black;
+$color-dark-lighter		: rgb(32, 32, 32);
+$color-dark-lighter-x2	: rgb(126, 126, 126);
+
+$top-post-content		: 130px;
+$height-post-content	: 450px;
+$padding-post-content	: 20px 30px;
+$padding-toc-content	: 20px 0px;
+
+$height-top-layout					: 100px;
+$height-vertical-padding-top-layout	: 20px;
+
+$width-post-content		: 70%;
+$width-post-toc			: 100% - $width-post-content;
+
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif;
+$font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+/*-----------------------------------------------------------------------------
+ *                                      PADDING 
+ *----------------------------------------------------------------------------*/
+.page-content {
+	padding: 0px;
+}
+
+/*-----------------------------------------------------------------------------
+ *                                    Link 
+ *----------------------------------------------------------------------------*/
+.post-content a {
+	color: black !important;
+}
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@import 
+	"theme-general.scss",
+	"layout.scss",
+	"theme-utility",
+	"theme-toc",
+	"theme-site",
+	"theme-post"
+;

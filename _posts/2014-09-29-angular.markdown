@@ -1,0 +1,205 @@
+---
+layout: post
+title:  "Angular"
+date:   2014-09-29 17:11:15
+categories: angular
+---
+
+## Workflow
+
+Router > View Template
+
+## Routing
+
+### [*angular-ui-router](http://angular-ui.github.io/ui-router/site/#/api/ui.router)
+
+`$state`
+
+
+#### Intall
+
+```sh
+bower install angular-ui-router --save
+```
+
+#### Use
+
+```js
+$state.go("resource")
+```
+
+### [angular-http-auth](http://ngmodules.org/modules/http-auth-interceptor)
+
+#### Install
+
+```js
+bower install angular-http-auth --save
+```
+
+#### Usage
+
+```javascript
+angular.module('myModule', ['http-auth-interceptor'])
+```
+
+## Views, Directives and Controllers
+
+### Directives  
+
+#### ng-app
+
+#### [ng-class](https://docs.angularjs.org/api/ng/directive/ngClass)
+
+```html
+<ANY
+	ng-class="">
+...
+</ANY>
+
+<p ng-class="{text-danger: true, text-center: false}"></p>
+```
+### Views
+
+### Controllers 
+
+#### Create
+
+```
+yo angular:controller resource
+```
+
+## Filters
+
+
+`number`
+
+## Forms 
+
+`ng-minLength` `ng-pattern` `ng-maxLength` `required`
+
+[tutorial](http://scotch.io/tutorials/javascript/angularjs-form-validation)
+
+### *angular-input-match
+
+#### Install
+
+```
+bower install angular-input-match --save
+```
+
+#### Usage
+
+```javascript
+angular.module('myModule', ['directives.inputMatch'])
+```
+
+## Services
+
+### Value
+
+> Sometimes we need some data that is globally available but at the same time we do not want to pollute the global (window) namespace with the definition for this data. Angular provides us the value and constant services which can do exactly this. Values and constants declared in this way can be injected into any controller or service like any other dependency (e.g. $scope, $http, etc.).
+
+#### Create 
+
+```
+yo angular:value config 
+```
+
+### Factory
+
+#### Create 
+
+```
+yo angular:factory resources
+```
+
+### Resource
+
+[tutorial](http://www.sitepoint.com/creating-crud-app-minutes-angulars-resource/)
+
+```javascript
+app.factory('resources', ['$resource', function($resource) {
+	return $resource('/resources/:id', {id :'@id'}, { 'update': { method:'PUT' } });
+}]);
+```
+
+## UI
+
+### [animations](https://docs.angularjs.org/guide/animations)
+ 
+### [angular-loading-bar](http://chieffancypants.github.io/angular-loading-bar/)
+
+#### Install
+
+```sh
+bower install angular-loading-bar --save
+```
+
+#### Use 
+
+```javascript
+angular.module('myModule', ['angular-loading-bar'])
+```
+
+### [angular-ui-bootstrap](http://angular-ui.github.io/bootstrap/)
+
+#### Install
+
+```sh
+bower install angular-bootstrap --save
+```
+
+#### Use 
+
+```js
+angular.module('myModule', ['ui.bootstrap'])
+```
+
+### [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+
+[Icon List](http://fortawesome.github.io/Font-Awesome/icons)
+
+#### Install
+
+```sh
+bower install fontawesome --save
+```
+
+#### Use
+
+```html
+<i class="fa fa-bell"></i>
+```
+
+### [Highcharts](https://github.com/pablojim/highcharts-ng)
+
+[live demo](http://www.highcharts.com/demo) | [code demo](http://jsfiddle.net/pablojim/Cp73s/) | [explorer](http://pablojim.github.io/highcharts-ng/examples/example.html)
+
+#### Install
+
+```sh
+bower install highcharts --save
+bower install highcharts-ng --save
+```
+
+#### Use
+
+```html
+<highchart id="chart1" config="chartConfig"></highchart>
+```
+
+## Utilities
+
+### [Underscore](http://underscorejs.org/)
+
+#### Install
+
+```sh
+bower install underscore --save
+```
+
+#### Use
+
+```js
+_.filter(["1, 2, 3"], function(num){ return num % 2 == 1}) // [1, 3]
+```

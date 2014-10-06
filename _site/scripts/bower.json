@@ -1,0 +1,25 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "homepage": "https://github.com/rain1024/code-blog",
+  "authors": [
+    "anhv <brother.rain.1024@gmail.com>"
+  ],
+  "keywords": [
+    "blog"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "underscore": "~1.7.0",
+    "underscore.string": "~2.3.3",
+    "fontawesome": "~4.2.0"
+  }
+}
