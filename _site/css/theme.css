@@ -10,24 +10,196 @@
 /*-----------------------------------------------------------------------------
  *                                    Link 
  *----------------------------------------------------------------------------*/
-.post-content a {
+post-content a {
   color: black !important; }
 
 /**
  * Clearfix
  */
-.footer-col-wrapper:after {
+.wrapper:after, .footer-col-wrapper:after {
   content: "";
   display: table;
   clear: both; }
 
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Basic styling
+ */
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%; }
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-bottom: 15px; }
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block; }
+
+figcaption {
+  font-size: 14px; }
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: 30px; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300; }
+
+/**
+ * Links
+ */
+a {
+  color: #2a7ae2;
+  text-decoration: none; }
+  a:visited {
+    color: #1756a9; }
+  a:hover {
+    color: #111;
+    text-decoration: underline; }
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: #828282;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #eef; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: scroll; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: -webkit-calc(900px - (30px * 2));
+  max-width: calc(900px - (30px * 2));
+  margin-right: 0px;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px; }
+  @media screen and (max-width: 800px) {
+    .wrapper {
+      max-width: -webkit-calc(900px - (30px));
+      max-width: calc(900px - (30px));
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+/**
+ * Clearfix
+ */
+.wrapper:after, .footer-col-wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/**
+ * Icons
+ */
+.icon > svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle; }
+  .icon > svg path {
+    fill: #828282; }
+
+/*-----------------------------------------------------------------------------
+ *                                     COLOR 
+ *----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------
  *                                      GENERAL 
  *----------------------------------------------------------------------------*/
 body {
   background: #efefef;
   overflow: hidden;
-  font-family: Helvetica, Arial, sans-serif; }
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+
+pre, code {
+  background-color: #FFFFFF;
+  overflow-x: auto; }
+
+/*-----------------------------------------------------------------------------
+ *                                      UTILITIES 
+ *----------------------------------------------------------------------------*/
+.box-shadow {
+  box-shadow: 0px 2px 3px #b7b7b7;
+  padding: 30px;
+  background-color: #FFFFFF; }
+
+.scrollbar::-webkit-scrollbar-track, .toc::-webkit-scrollbar-track, .post-content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+  border-radius: 1px;
+  background-color: #FFFFFF; }
+
+.scrollbar::-webkit-scrollbar, .toc::-webkit-scrollbar, .post-content::-webkit-scrollbar {
+  width: 1px;
+  background-color: #FFFFFF; }
+
+.scrollbar::-webkit-scrollbar-thumb, .toc::-webkit-scrollbar-thumb, .post-content::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+  background-color: #e5e5e5; }
 
 .full, .post {
   position: absolute;
@@ -37,34 +209,6 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px; }
-
-.row-12 {
-  position: absolute;
-  height: 10000%; }
-
-.row-11 {
-  position: absolute;
-  height: 9166.66667%; }
-
-.row-10 {
-  position: absolute;
-  height: 8333.33333%; }
-
-.row-9 {
-  position: absolute;
-  height: 7500%; }
-
-.row-8 {
-  position: absolute;
-  height: 6666.66667%; }
-
-.row-3 {
-  position: absolute;
-  height: 2500%; }
-
-.row-2, .post-header {
-  position: absolute;
-  height: 1666.66667%; }
 
 /**
  * Site header
@@ -199,60 +343,6 @@ body {
   display: block;
   font-size: 24px; }
 
-/**
- * Posts
- */
-.post-header {
-  margin-bottom: 30px; }
-
-.post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1; }
-  @media screen and (max-width: 800px) {
-    .post-title {
-      font-size: 36px; } }
-
-.post-content {
-  margin-bottom: 30px; }
-  .post-content h2 {
-    font-size: 32px; }
-    @media screen and (max-width: 800px) {
-      .post-content h2 {
-        font-size: 28px; } }
-  .post-content h3 {
-    font-size: 26px; }
-    @media screen and (max-width: 800px) {
-      .post-content h3 {
-        font-size: 22px; } }
-  .post-content h4 {
-    font-size: 20px; }
-    @media screen and (max-width: 800px) {
-      .post-content h4 {
-        font-size: 18px; } }
-
-/*-----------------------------------------------------------------------------
- *                                      UTILITIES 
- *----------------------------------------------------------------------------*/
-.box-shadow {
-  box-shadow: 0px 2px 10px #b7b7b7;
-  padding: 30px;
-  background-color: #FFFFFF; }
-
-.scrollbar::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  background-color: #FFFFFF; }
-
-.scrollbar::-webkit-scrollbar {
-  width: 6px;
-  background-color: #FFFFFF; }
-
-.scrollbar::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #202020; }
-
 /*-----------------------------------------------------------------------------
  *                                     TOC 
  *----------------------------------------------------------------------------*/
@@ -260,38 +350,41 @@ body {
   .toc {
     display: none; } }
 .toc {
-  position: fixed;
-  top: 130px;
-  left: 0px;
-  width: 30%;
-  height: 450px;
-  padding: 20px 0px;
+  height: calc(91.66667% - 40px);
+  height: -webkit-calc(91.66667% - 40px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  top: 8.33333%;
+  width: 16.66667%;
+  padding-left: 0%;
+  padding-right: 0%;
+  position: absolute;
+  left: 0%;
   overflow: auto;
   background-color: #FFFFFF;
   z-index: 1; }
-
-.toc h3 {
-  color: black;
-  font-weight: bold;
-  padding: 0px 25px; }
-
-.toc > ul > li {
-  list-style-type: none; }
-
-.toc > ul > li.toc-h2 {
-  border-bottom: solid 1px #e2e2e2;
-  padding: 4px 0px; }
-
-.toc > ul > li.toc-h2 > a {
-  font-size: 15px;
-  font-weight: bold; }
-
-.toc > ul > li.toc-h3 {
-  margin: 4px 0px;
-  font-size: 13px; }
-
-.toc > ul > li > a {
-  color: black; }
+  .toc ul li {
+    list-style-type: none; }
+    .toc ul li a {
+      color: black; }
+  .toc ul li.toc-h2 {
+    margin: 20px 0px 0px; }
+    .toc ul li.toc-h2 a {
+      color: #bbbbbb;
+      font-size: 11px;
+      line-height: 12.1px;
+      text-transform: uppercase; }
+  .toc ul li.toc-h3 {
+    margin: 0px 0px;
+    padding: 0px 0px; }
+    .toc ul li.toc-h3 a {
+      color: #444;
+      font-size: 13px;
+      line-height: 15.5px; }
+  .toc a.active {
+    color: #d62c1a !important;
+    font-weight: bold; }
 
 /*-----------------------------------------------------------------------------
  *                                       HEADER
@@ -315,16 +408,25 @@ body {
  *                                     HEADER 
  *----------------------------------------------------------------------------*/
 .post-header {
+  height: calc(8.33333% - 16px);
+  height: -webkit-calc(8.33333% - 16px);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: absolute;
   width: 100%;
   text-align: center;
   z-index: 200;
-  background: #202020;
-  color: #FFFFFF;
-  padding: 20px 0px;
-  height: 12%; }
+  background: #e74c3c;
+  color: #FFFFFF; }
 
 .post-title {
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: -1px;
+  line-height: 1; }
+  @media screen and (max-width: 800px) {
+    .post-title {
+      font-size: 36px; } }
 
 .post-meta {
   color: #FFFFFF; }
@@ -333,12 +435,49 @@ body {
  *                                     CONTENT 
  *----------------------------------------------------------------------------*/
 .post-content {
+  height: calc(91.66667% - 0px);
+  height: -webkit-calc(91.66667% - 0px);
+  padding-top: 0px;
+  padding-bottom: 0px;
   position: absolute;
-  top: 130px;
-  left: 30%;
-  width: 70%;
-  height: 450px;
-  padding: 20px 30px;
-  border-left: solid 2px #7e7e7e;
-  overflow: auto;
-  background-color: #FFFFFF; }
+  top: 8.33333%;
+  width: 83.33333%;
+  padding-left: 0%;
+  padding-right: 0%;
+  position: absolute;
+  left: 16.66667%;
+  border-left: solid 1px #d1d1d1;
+  overflow: auto; }
+  .post-content .section-content {
+    border-top: solid 1px #dddddd;
+    padding: 20px; }
+  .post-content .doc-content {
+    padding-top: 16px; }
+  .post-content h2 {
+    font-size: 25px;
+    line-height: 27.5px;
+    font-weight: bold;
+    margin: 10px 0px;
+    color: #e74c3c; }
+    @media screen and (max-width: 800px) {
+      .post-content h2 {
+        font-size: 28px; } }
+  .post-content p {
+    font-size: 14px;
+    color: #919191; }
+  .post-content h3 {
+    font-size: 26px;
+    color: #ea6153; }
+    @media screen and (max-width: 800px) {
+      .post-content h3 {
+        font-size: 22px; } }
+    .post-content h3 a {
+      color: inherit; }
+  .post-content h4 {
+    font-size: 20px;
+    color: #ea6153; }
+    @media screen and (max-width: 800px) {
+      .post-content h4 {
+        font-size: 18px; } }
+    .post-content h4 a {
+      color: inherit; }

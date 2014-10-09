@@ -8,14 +8,32 @@
 	padding: 0px;
 }
 
-.row-12 { position: absolute; height: percentage(100 / 12 * 12) }
-.row-11 { position: absolute; height: percentage(100 / 12 * 11) }
-.row-10 { position: absolute; height: percentage(100 / 12 * 10) }
-.row-9 { position: absolute; height: percentage(100 / 12 * 9) }
-.row-8 { position: absolute; height: percentage(100 / 12 * 8) }
-.row-3 { position: absolute; height: percentage(100 / 12 * 3)}
-.row-2 { position: absolute; height: percentage(100 / 12 * 2) }
+@mixin row($number, $row-height-padding: 20px) {
+	height: calc(#{percentage($number/12)} - #{2 * $row-height-padding});
+	height: -webkit-calc(#{percentage($number/12)} - #{2 * $row-height-padding});
+	padding : {
+		top : $row-height-padding;
+		bottom: $row-height-padding;
+	}
+	position: absolute;
+}
 
+@mixin row-offset($number) {
+	top: percentage($number/12);
+}
+
+@mixin column($number, $column-width-padding: 2%) {
+	width: percentage($number/12) - 2 * $column-width-padding;
+	padding: {
+		left: $column-width-padding;
+		right: $column-width-padding;
+	}
+	position: absolute;
+}
+
+@mixin column-offset($number) {
+	left: percentage($number/12);
+}
 /**
  * Site header
  */
@@ -204,51 +222,4 @@
 .post-link {
     display: block;
     font-size: 24px;
-}
-
-
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
 }

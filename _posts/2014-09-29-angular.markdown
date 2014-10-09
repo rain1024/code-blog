@@ -11,7 +11,9 @@ Router > View Template
 
 ## Routing
 
-### [*angular-ui-router](http://angular-ui.github.io/ui-router/site/#/api/ui.router)
+Routing route is used for deep-linking URLs to controllers and views (HTML partials).
+
+### [angular-ui-router](http://angular-ui.github.io/ui-router/site/#/api/ui.router)
 
 `$state`
 
@@ -79,7 +81,7 @@ yo angular:controller resource
 
 [tutorial](http://scotch.io/tutorials/javascript/angularjs-form-validation)
 
-### *angular-input-match
+### angular-input-match
 
 #### Install
 

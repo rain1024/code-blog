@@ -6,9 +6,110 @@
 </description>
     <link>http://github.com/rain1024/</link>
     <atom:link href="http://github.com/rain1024/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 06 Oct 2014 14:16:38 +0700</pubDate>
-    <lastBuildDate>Mon, 06 Oct 2014 14:16:38 +0700</lastBuildDate>
+    <pubDate>Thu, 09 Oct 2014 15:42:21 +0700</pubDate>
+    <lastBuildDate>Thu, 09 Oct 2014 15:42:21 +0700</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Spark</title>
+        <description>&lt;h2&gt;Spark&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;2010&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Apache Spark&lt;/strong&gt; is a fast and general-purpose &lt;em&gt;cluster computing system&lt;/em&gt;. It provides high-level APIs in Scala, Java, and Python that make parallel jobs easy to write, and an optimized engine that supports general computation graphs. It also supports a rich set of higher-level tools including Shark (Hive on Spark), MLlib for machine learning, GraphX for graph processing, and Spark Streaming.&lt;/p&gt;
+
+&lt;h3&gt;Installing&lt;/h3&gt;
+
+&lt;h3&gt;Spark SQL&lt;/h3&gt;
+
+&lt;p&gt;Uniform interface for data access&lt;/p&gt;
+
+&lt;h3&gt;Spark MLlib&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;2014&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Standark library of machine learning algorithms&lt;/p&gt;
+
+&lt;h2&gt;Data Mining&lt;/h2&gt;
+
+&lt;h3&gt;Map Reduce&lt;/h3&gt;
+
+&lt;h4&gt;Combiners&lt;/h4&gt;
+
+&lt;p&gt;Combiner combines the values of all keys of a single mapper (single node)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;h4&gt;Partition&lt;/h4&gt;
+
+&lt;h3&gt;Graph&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Technological Network (Seven Bridges of Konigsberd) &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Web as a Graph&lt;/h4&gt;
+
+&lt;p&gt;Web as a directed graph&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Node: Webpages&lt;/li&gt;
+&lt;li&gt;Edges: Hyperlinks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How to organize the Web?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;First try: Human curated &lt;strong&gt;Web directories&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Second try: Web Search
+
+&lt;ul&gt;
+&lt;li&gt;Information Retrieval investigates: Find releveant docs in a small and trusted set&lt;/li&gt;
+&lt;li&gt;BUt: Web is huge, full of untrusted documents, random things, web spam, etc&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Web Serch: 2 Challenges&lt;/p&gt;
+
+&lt;p&gt;2 challenges of web search&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Web contains many sources of information. Who to &amp;quot;trust&amp;quot;?&lt;/li&gt;
+&lt;li&gt;What is the &amp;quot;best&amp;quot; answer to query &amp;quot;newspaper&amp;quot;?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Ranking Nodes on the Graph&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;All web pages are not equally &amp;quot;important&amp;quot;&lt;/li&gt;
+&lt;li&gt;There is large diversity in the web-graph node connectivity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Link Analysis Algoritms&lt;/p&gt;
+
+&lt;p&gt;We will cover the following Link Analysis approaches for computing importances of nodes in a graph:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Page Rank&lt;/li&gt;
+&lt;li&gt;Hubs and Authorities (HITS)&lt;/li&gt;
+&lt;li&gt;Topic-Specific (Personalized) Page Rank&lt;/li&gt;
+&lt;li&gt;Web Spam Dectection Algorithms&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Page Rank&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Links as Votes&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 09 Oct 2014 16:27:15 +0700</pubDate>
+        <link>http://github.com/rain1024/big-data/2014/10/09/spark.html</link>
+        <guid isPermaLink="true">http://github.com/rain1024/big-data/2014/10/09/spark.html</guid>
+        
+        
+        <category>big-data</category>
+        
+      </item>
     
       <item>
         <title>Vim</title>
@@ -92,7 +193,9 @@
 
 &lt;h2&gt;Routing&lt;/h2&gt;
 
-&lt;h3&gt;&lt;a href=&quot;http://angular-ui.github.io/ui-router/site/#/api/ui.router&quot;&gt;*angular-ui-router&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Routing route is used for deep-linking URLs to controllers and views (HTML partials).&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href=&quot;http://angular-ui.github.io/ui-router/site/#/api/ui.router&quot;&gt;angular-ui-router&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;$state&lt;/code&gt;&lt;/p&gt;
 
@@ -141,7 +244,7 @@
 
 &lt;p&gt;&lt;a href=&quot;http://scotch.io/tutorials/javascript/angularjs-form-validation&quot;&gt;tutorial&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3&gt;*angular-input-match&lt;/h3&gt;
+&lt;h3&gt;angular-input-match&lt;/h3&gt;
 
 &lt;h4&gt;Install&lt;/h4&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;bower install angular-input-match --save
@@ -246,7 +349,11 @@ bower install highcharts-ng --save
     
       <item>
         <title>Ubuntu</title>
-        <description>&lt;h1&gt;How do I&lt;/h1&gt;
+        <description>&lt;h2&gt;How do I&lt;/h2&gt;
+
+&lt;h2&gt;ZSH&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;&quot;&gt;http://www.geekmind.net/2011/01/shortcuts-to-improve-your-bash-zsh.htm&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 29 Sep 2014 16:27:15 +0700</pubDate>
         <link>http://github.com/rain1024/ubuntu/2014/09/29/ubuntu.html</link>

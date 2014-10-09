@@ -5,4 +5,9 @@ date:   2014-09-29 09:27:15
 categories: ubuntu 
 ---
 
-# How do I  
+## How do I  
+
+## ZSH
+
+[http://www.geekmind.net/2011/01/shortcuts-to-improve-your-bash-zsh.htm]()
+

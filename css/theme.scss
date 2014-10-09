@@ -4,7 +4,6 @@
 /*-----------------------------------------------------------------------------
  *                                     COLOR 
  *----------------------------------------------------------------------------*/
-$color-base				: #FF3D1F;
 
 $color-background		: #FF3D1F;
 $color-background-darker: #A91700;
@@ -31,17 +30,17 @@ $width-post-content		: 70%;
 $width-post-toc			: 100% - $width-post-content;
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-family		: 'Open Sans', Helvetica, Arial, sans-serif;
+$font-family			: 'Open Sans', Helvetica, Arial, sans-serif;
+$base-font-size			: 16px;
+$small-font-size		:  $base-font-size * 0.875;
+$base-line-height		: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit			: 30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color				: #111;
+$background-color		: #fdfdfd;
+$brand-color			: #2a7ae2;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -60,7 +59,7 @@ $on-laptop:        800px;
 /*-----------------------------------------------------------------------------
  *                                    Link 
  *----------------------------------------------------------------------------*/
-.post-content a {
+post-content a {
 	color: black !important;
 }
 
@@ -83,9 +82,10 @@ $on-laptop:        800px;
 }
 
 @import 
+	"base.scss",
 	"theme-general.scss",
-	"layout.scss",
 	"theme-utility",
+	"layout.scss",
 	"theme-toc",
 	"theme-site",
 	"theme-post"

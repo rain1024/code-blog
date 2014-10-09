@@ -7,3 +7,8 @@ body {
 	font-family		: $font-family;
 }
 
+
+pre, code {
+	background-color: $color-white;
+	overflow-x: auto;
+}

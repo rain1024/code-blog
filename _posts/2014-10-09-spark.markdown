@@ -1,0 +1,82 @@
+---
+layout: post
+title:  "Spark"
+date:   2014-10-09 09:27:15
+categories: big-data 
+---
+
+## Spark
+
+`2010`
+
+**Apache Spark** is a fast and general-purpose *cluster computing system*. It provides high-level APIs in Scala, Java, and Python that make parallel jobs easy to write, and an optimized engine that supports general computation graphs. It also supports a rich set of higher-level tools including Shark (Hive on Spark), MLlib for machine learning, GraphX for graph processing, and Spark Streaming.
+
+### Installing
+
+
+### Spark SQL
+
+Uniform interface for data access
+
+### Spark MLlib
+
+`2014`
+
+Standark library of machine learning algorithms
+
+## Data Mining
+
+### Map Reduce
+
+#### Combiners
+
+Combiner combines the values of all keys of a single mapper (single node)
+
+![](/assets/1.png)
+
+#### Partition
+
+### Graph
+
+* Technological Network (Seven Bridges of Konigsberd) 
+
+#### Web as a Graph
+
+Web as a directed graph
+
+* Node: Webpages
+* Edges: Hyperlinks
+
+How to organize the Web?
+
+* First try: Human curated **Web directories**
+* Second try: Web Search
+	* Information Retrieval investigates: Find releveant docs in a small and trusted set
+	* BUt: Web is huge, full of untrusted documents, random things, web spam, etc
+
+Web Serch: 2 Challenges
+
+2 challenges of web search
+
+1. Web contains many sources of information. Who to "trust"?
+2. What is the "best" answer to query "newspaper"?
+
+Ranking Nodes on the Graph
+
+* All web pages are not equally "important"
+* There is large diversity in the web-graph node connectivity
+
+Link Analysis Algoritms
+
+We will cover the following Link Analysis approaches for computing importances of nodes in a graph:
+
+* Page Rank
+* Hubs and Authorities (HITS)
+* Topic-Specific (Personalized) Page Rank
+* Web Spam Dectection Algorithms
+
+#### Page Rank
+
+* Links as Votes
+
+

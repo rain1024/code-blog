@@ -15,7 +15,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
-  color: #111;
+  color: #444;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%; }
 
@@ -69,7 +69,7 @@ a {
   a:visited {
     color: #1756a9; }
   a:hover {
-    color: #111;
+    color: #444;
     text-decoration: underline; }
 
 /**
@@ -142,6 +142,9 @@ pre {
   .icon > svg path {
     fill: #828282; }
 
+/*-----------------------------------------------------------------------------
+ *                                     COLOR 
+ *----------------------------------------------------------------------------*/
 .full {
   position: absolute;
   left: 0;
@@ -150,34 +153,6 @@ pre {
   width: 100%;
   margin: 0px;
   padding: 0px; }
-
-.row-12 {
-  position: absolute;
-  height: 10000%; }
-
-.row-11 {
-  position: absolute;
-  height: 9166.66667%; }
-
-.row-10 {
-  position: absolute;
-  height: 8333.33333%; }
-
-.row-9 {
-  position: absolute;
-  height: 7500%; }
-
-.row-8 {
-  position: absolute;
-  height: 6666.66667%; }
-
-.row-3 {
-  position: absolute;
-  height: 2500%; }
-
-.row-2 {
-  position: absolute;
-  height: 1666.66667%; }
 
 /**
  * Site header
@@ -201,7 +176,7 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: #444;
     line-height: 1.5; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
@@ -311,38 +286,6 @@ pre {
 .post-link {
   display: block;
   font-size: 24px; }
-
-/**
- * Posts
- */
-.post-header {
-  margin-bottom: 30px; }
-
-.post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1; }
-  @media screen and (max-width: 800px) {
-    .post-title {
-      font-size: 36px; } }
-
-.post-content {
-  margin-bottom: 30px; }
-  .post-content h2 {
-    font-size: 32px; }
-    @media screen and (max-width: 800px) {
-      .post-content h2 {
-        font-size: 28px; } }
-  .post-content h3 {
-    font-size: 26px; }
-    @media screen and (max-width: 800px) {
-      .post-content h3 {
-        font-size: 22px; } }
-  .post-content h4 {
-    font-size: 20px; }
-    @media screen and (max-width: 800px) {
-      .post-content h4 {
-        font-size: 18px; } }
 
 /**
  * Syntax highlighting styles

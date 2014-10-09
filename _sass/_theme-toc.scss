@@ -8,47 +8,48 @@
 }
 
 .toc {
-	position: fixed;
+	@extend .scrollbar;
+	@include row(11);
+	@include row-offset(1);
 
-	top: $top-post-content;
-	left: 0px;
-	width: $width-post-toc;
-	height: $height-post-content;
-
-	padding: $padding-toc-content;
+	@include column(2, 0%);
+	@include column-offset(0); 
 
 	overflow: auto;
-
 	background-color: $color-light;
 	z-index: 1;
 
-}
+	ul {
+		li {
+			list-style-type: none;
+			a {
+				color: $color-dark;
+			}
+		}
 
-.toc h3 {
-	color: $color-dark;
-	font-weight: bold;
-	padding: 0px 25px;
-}
+		li.toc-h2 {
+			margin: 20px 0px 0px;
+			a {
+				color: rgb(187, 187, 187);
+				font-size: 11px;
+				line-height: 12.1px;
+				text-transform: uppercase;
+			}
+		}
 
-.toc > ul > li {
-	list-style-type: none;
-}
-.toc > ul > li.toc-h2 {
-	border-bottom: solid 1px rgb(226, 226, 226);
-	padding: 4px 0px;
-}
+		li.toc-h3 {
+			margin: 0px 0px;
+			padding: 0px 0px;
+			a {
+				color: #444; 
+				font-size: 13px;
+				line-height: 15.5px;
+			}
+		}
+	}
 
-.toc > ul > li.toc-h2 > a {
-	font-size: 15px;
-	font-weight: bold;
-}
-
-.toc > ul > li.toc-h3 {
-	margin: 4px 0px;
-	font-size: 13px;
-}
-
-
-.toc > ul > li > a {
-	color: $color-dark;
+	a.active {
+		color: darken($color-base, $mono-offset) !important;
+		font-weight: bold;
+	}
 }

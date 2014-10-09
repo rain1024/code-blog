@@ -12,19 +12,22 @@
  *----------------------------------------------------------------------------*/
 
 .post-header {
-	@extend .row-2;
+	@include row(1, 8px);
 	width		: 100%;
 	text-align	: center;
 	z-index		: 200;
-	background	: $color-dark-lighter;
+	background	: $color-base;
 	color		: $color-light;
-	padding 	: $height-vertical-padding-top-layout 0px;
-
-	height		: 12%;
 }
 
 .post-title {
 	font-weight: bold;
+    font-size: 32px;
+    letter-spacing: -1px;
+    line-height: 1;
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
 }
 
 .post-meta {
@@ -36,16 +39,61 @@
  *----------------------------------------------------------------------------*/
 
 .post-content {
-	position: absolute;
+	@extend .scrollbar;
+	@include row(11, 0px);
+	@include row-offset(1);
+	@include column(10, 0%);
+	@include column-offset(2);
 
-	top: $top-post-content;
-	left: $width-post-toc;
-	width: $width-post-content;
-	height: $height-post-content;
-
-	padding: $padding-post-content;
-
-	border-left: solid 2px $color-dark-lighter-x2;
+	border-left: solid 1px #d1d1d1;
 	overflow: auto;
-	background-color: $color-light;
+	
+	.section-content {
+		border-top: solid 1px lighten($color-mono, $mono-offset * 6);
+		padding: 20px;
+	}
+	
+	.doc-content {
+		padding-top: 16px;
+	}
+
+    h2 {
+        font-size: 25px;
+		line-height: 27.5px;
+		font-weight: bold;
+		margin: 10px 0px;
+		color: $color-base;
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+
+	p {
+		font-size: 14px;
+		color: lighten($color-mono, $mono-offset * 3);
+	}
+
+    h3 {
+        font-size: 26px;
+		color: lighten($color-base, $mono-offset / 2);
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+		a {
+			color: inherit;
+		}
+    }
+
+    h4 {
+        font-size: 20px;
+		color: lighten($color-base, $mono-offset / 2);
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+
+		a {
+			color: inherit;
+		}
+    }
 }
