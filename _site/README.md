@@ -8,24 +8,24 @@
 
 ### Prerequires
 
-1. Ruby
-2. Bundle
+1 Ruby
+2 Bundle
 
 ```
 gem install bundle
 ```
 
-3. [jekyll](jekylllrb.com)
+3 [jekyll](jekylllrb.com)
 
 ### Install
 
-1. Clone *code-blog* to your local
+1 Clone *code-blog* to your local
 
 ```
 git clone https//github.com/rain1024/code-blog
 ```
 
-2. Install third-party gems[
+2 Install third-party gems[
 
 ```
 bundle install
