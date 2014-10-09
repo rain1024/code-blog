@@ -38,6 +38,10 @@ cd code-blog
 jekyll serve
 ```
 
+### Next Steps
+
+* Change your own favicon by replace `assets/icon.png`
+
 ### Activity Logs
 
 * 2014/10/09
@@ -48,4 +52,4 @@ jekyll serve
 ### Todo-list 
 * Improvement UI
 
-Powered by [Jekyll](jekyllrb.com)
+**Powered by [Jekyll](jekyllrb.com)**

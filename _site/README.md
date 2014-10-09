@@ -8,24 +8,24 @@
 
 ### Prerequires
 
-1 Ruby
-2 Bundle
+* Ruby
+* Bundle
 
 ```
 gem install bundle
 ```
 
-3 [jekyll](jekylllrb.com)
+* [jekyll](jekylllrb.com)
 
 ### Install
 
-1 Clone *code-blog* to your local
+* Clone *code-blog* to your local
 
 ```
 git clone https//github.com/rain1024/code-blog
 ```
 
-2 Install third-party gems
+* Install third-party gems
 
 ```
 bundle install
@@ -38,6 +38,10 @@ cd code-blog
 jekyll serve
 ```
 
+### Next Steps
+
+* Change your own favicon by replace `assets/icon.png`
+
 ### Activity Logs
 
 * 2014/10/09
@@ -48,4 +52,4 @@ jekyll serve
 ### Todo-list 
 * Improvement UI
 
-Powered by [Jekyll](jekyllrb.com)
+**Powered by [Jekyll](jekyllrb.com)**
