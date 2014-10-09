@@ -25,7 +25,7 @@ gem install bundle
 git clone https//github.com/rain1024/code-blog
 ```
 
-2 Install third-party gems[
+2 Install third-party gems
 
 ```
 bundle install
