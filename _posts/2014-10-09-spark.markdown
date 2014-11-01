@@ -2,81 +2,1017 @@
 layout: post
 title:  "Spark"
 date:   2014-10-09 09:27:15
-categories: big-data 
+categories: data 
 ---
 
-## Spark
+## Introduction 
 
-`2010`
+![](/assets/spark.png)
 
-**Apache Spark** is a fast and general-purpose *cluster computing system*. It provides high-level APIs in Scala, Java, and Python that make parallel jobs easy to write, and an optimized engine that supports general computation graphs. It also supports a rich set of higher-level tools including Shark (Hive on Spark), MLlib for machine learning, GraphX for graph processing, and Spark Streaming.
+`2010 - now`, [`Matei Zaharia`](http://en.wikipedia.org/wiki/Matei_Zaharia), `open-source`, `computing framework`, `data analytics`, `UC Berkeley`, `Apache`, [`top-level project`](https://blogs.apache.org/foundation/entry/the_apache_software_foundation_announces50)
 
-### Installing
+**Apache Spark** is *a fast and general-purpose*  **cluster computing system**.
+
+It provides high-level APIs in Scala, Java, and Python that make parallel jobs easy to write, and an optimized engine that supports general computation graphs. It also supports a rich set of higher-level tools including Shark (Hive on Spark), MLlib for machine learning, GraphX for graph processing, and Spark Streaming.
+
+### Discovery List
+
+* [Spark on OpenHub](https://www.openhub.net/p/apache-spark)
+* [Big Data Timeline](http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AqLYda0EhWbSdEZTaHFrT3pJd0cxakRBY3d3aTFuUFE&font=Bevan-PotanoSans&maptype=toner&lang=en&height=650)
+* [Berkeley Data Analysis Stack](http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AqLYda0EhWbSdEZTaHFrT3pJd0cxakRBY3d3aTFuUFE&font=Bevan-PotanoSans&maptype=toner&lang=en&height=650)
+* [Apache Stack](http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AqLYda0EhWbSdEsxel9HdDhzTmlILU5GQV9kVW5tRlE#gid&font=Bevan-PotanoSans&maptype=toner&lang=en&height=650) 
 
 
-### Spark SQL
+### Very first examples
+
+#### Example: Log Mining
+
+```scala
+// load error messages from a log into memory
+// then interactively search for various patterns
+// https://gist.github.com/ceteri/...
+
+// base RDD
+// time: 0
+val lines = sc.textFile("hdfs://192.168.64.131:8020/user/mvcorp/access_log-20141012")
+
+// cache RDD
+// time: 0
+lines.cache()
+
+// transformed RDDs
+// time: 0
+val posts = lines.filter(_.contains("POST"))
+val gets = lines.filter(_.contains("GET"))
+val ambaries = lines.filter(_.contains("ambari"))
+
+// first action
+// time		: 444s 
+// result	: 201503 
+lines.count()
+
+// second action
+// time		: 0.06s
+// result	: 142961
+posts.count()
+
+// third action
+// time		: 0.06s
+// result	: 58542 
+gets.count()
+
+// third action
+// time		: 0.05s
+// result	: 51936 
+ambaries.count()
+```
+
+#### Example: Word Count
+```scala
+val f = sc.textFile("README.md")
+val wc = f.flatMap(l => l.split(" ")).map(word => (word, 1)).reduceByKey(_ + _)
+wc.saveAsTextFie("wc_out.txt")
+```
+
+#### Example: Join
+
+```
+bash-3.2$ ./bin/spark-shell
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 1.0.0
+      /_/
+ 
+Using Scala version 2.10.4 (Java HotSpot(TM) 64-Bit Server VM, Java 1.6.0_65)
+Type in expressions to have them evaluated.
+Type :help for more information.
+2014-04-28 12:36:48.473 java[11284:1003] Unable to load realm info from SCDynamicStore
+Spark context available as sc.
+ 
+scala> val format = new java.text.SimpleDateFormat("yyyy-MM-dd")
+format: java.text.SimpleDateFormat = java.text.SimpleDateFormat@f67a0200
+ 
+scala> case class Register (d: java.util.Date, uuid: String, cust_id: String, lat: Float, lng: Float)
+defined class Register
+ 
+scala> case class Click (d: java.util.Date, uuid: String, landing_page: Int)
+defined class Click
+ 
+scala> val reg = sc.textFile("reg.tsv").map(_.split("\t")).map(
+     |  r => (r(1), Register(format.parse(r(0)), r(1), r(2), r(3).toFloat, r(4).toFloat))
+     | )
+reg: org.apache.spark.rdd.RDD[(String, Register)] = MappedRDD[3] at map at <console>:21
+ 
+scala> val clk = sc.textFile("clk.tsv").map(_.split("\t")).map(
+     |  c => (c(1), Click(format.parse(c(0)), c(1), c(2).trim.toInt))
+     | )
+clk: org.apache.spark.rdd.RDD[(String, Click)] = MappedRDD[7] at map at <console>:21
+ 
+scala> reg.join(clk).take(2)
+14/04/28 12:37:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14/04/28 12:37:48 WARN LoadSnappy: Snappy native library not loaded
+res0: Array[(String, (Register, Click))] = Array((81da510acc4111e387f3600308919594,(Register(Tue Mar 04 00:00:00 PST 2014,81da510acc4111e387f3600308919594,2,33.85701,-117.85574),Click(Thu Mar 06 00:00:00 PST 2014,81da510acc4111e387f3600308919594,61))), (15dfb8e6cc4111e3a5bb600308919594,(Register(Sun Mar 02 00:00:00 PST 2014,15dfb8e6cc4111e3a5bb600308919594,1,33.659943,-117.95812),Click(Tue Mar 04 00:00:00 PST 2014,15dfb8e6cc4111e3a5bb600308919594,11))))
+ 
+scala> reg.join(clk).toDebugString
+res5: String = 
+FlatMappedValuesRDD[46] at join at <console>:23 (1 partitions)
+  MappedValuesRDD[45] at join at <console>:23 (1 partitions)
+    CoGroupedRDD[44] at join at <console>:23 (1 partitions)
+      MappedRDD[36] at map at <console>:16 (1 partitions)
+        MappedRDD[35] at map at <console>:16 (1 partitions)
+          MappedRDD[34] at textFile at <console>:16 (1 partitions)
+            HadoopRDD[33] at textFile at <console>:16 (1 partitions)
+      MappedRDD[40] at map at <console>:16 (1 partitions)
+        MappedRDD[39] at map at <console>:16 (1 partitions)
+          MappedRDD[38] at textFile at <console>:16 (1 partitions)
+            HadoopRDD[37] at textFile at <console>:16 (1 partitions)
+```
+
+#### Example: Join two wordcount
+
+```scala
+
+val rm = sc.textFile("README.md")
+val rm_wc = rm.flatMap(l => l.split(" ")).fiter(_ == "Spark").map(word => (word, 1))
+
+val cl = sc.textFile("changes.txt")
+val cl_wc = cl.flatMap(l => l.split(" ")).fiter(_ == "Spark").map(word => (word, 1))
+
+rm_wc.join(cl_wc)
+
+```
+
+## Motivation and Features
+
+* O'Ryan, R. (2014). Is Apache Spark the Next Big Thing in Big Data? - Dice News. [online] Dice News. Available at: http://news.dice.com/2014/03/12/apache-spark-next-big-thing-big-data/ [Accessed 12 Mar. 2014].
+
+> In any article or blog post, any mention of Big Data usually includes something about Hadoop. When it comes to Big Data, Apache Hadoop has been the big elephant in the room, and the release of Hadoop 2.0 in 2013 made the environment easier and more stable. But even with the inclusion of Impala for querying stored information real-time, Hadoop is still a **batch-based system** that processes data in, well, **batch mode**.
+
+> I’ve had an opportunity to use Apache Spark in real-world analytics since Sept. 2013. I found GraphX to be a bit buggy, but then I believe it’s still in beta. I used Scala, Python and R for developing applications on Spark and have found it to be blazingly fast. Was this on a laptop? No. It was on a high-performance computing cluster of six nodes with lots and lots of memory that also had an existing Hadoop infrastructure. 
+
+> Would I recommend Spark to others? Yes. Spark fixes many “oversights” that I see in Hadoop. It’s fast and gets the job that I need to get done very quickly.
+
+### MapReduce Limitations 
+
+MapReduce use cases showed two major limitations:
+
+1. difficultly of programming directly in MR
+2. performance bottlenecks, or `batch` not fitting the use cases
+
+In short, MR doesn't compose well for large applications. Therefore, people built specialized systems as workarounds...
+
+### 6 Sparkling Features
+
+![](/assets/spark_libs.png)
+
+**1. Lighting Fast Processing**
+
+When comes to BigData processing **speed** always matters. We always look for **processing our huge data** as fast as possible. Spark enables applications in Hadoop clusters to run up to 100x faster in memory, and 10x faster even when running on disk. Spark makes it possible by reducing number of read/write to disc. It stores this intermediate processing data in-memory. It uses the concept of an Resilient Distributed Dataset (RDD), which allows it to transparently store data on memory and persist it to disc only it’s needed. This helps to reduce most of the disc read and write –  the main time consuming factors – of data processing.
+
+**2. Ease of Use as it supports multiple languages**
+
+Spark lets you quickly write applications in **Java**, **Scala**, or **Python**. This helps developers to create and run their applications on their familiar programming languages. It comes with a built-in set of over 80 high-level operators.We can use it interactively to query data within the shell too.
+
+**3. Support for Sophisticated Analytics**
+
+In addition to simple “map” and “reduce” operations, Spark supports **SQL queries**, **streaming data**, and **complex analytics** such as **machine learning** and **graph algorithms** out-of-the-box. Not only that, users can combine all these capabilities seamlessly in a single workflow.
+
+**4. Real time stream processing**
+
+Spark can handle **real time streaming**. Map-reduce mainly handles and process the data stored already. However Spark can also manipulate data in real time using Spark Streaming. Not ignoring that there are other frameworks with their integration we can handle streaming in Hadoop.
+
+**5. Ability to integrate with Hadoop and existing HadoopData**
+
+Spark can run **independently**. Apart from that it can run on **Hadoop 2’s YARN** cluster manager, and can read any existing Hadoop data. That’s a BIG advantage! It can read from any Hadoop data sources for example **HBase**, **HDFS** etc. This feature of Spark makes it suitable for migration of existing pure Hadoop applications, if that application use-case is really suiting Spark. As Spark is using immutability more all scenarios might not be suitable for migration.
+
+**6. Active and expanding Community**
+
+Apache Spark is built by a wide set of developers from over **50 companies**. The project started in 2009 and as of now more than **250 developers** have contributed to Spark already! It has active mailing lists and JIRA for issue tracking
+
+## Spark Architecture
+
+### Goal and overview
+
+> Our goal is to provide **an abstraction** that supports **applications with working sets** (i.e., applications that reuse an intermediate result in multiple parallel operations) while **preserving** the **attractive properties of MapReduce** and related models: **automatic fault tolerance**, **locality-aware sheduling**, and **scalability**. 
+
+### Resilient Distributed Datasets (RDDs)
+
+`Resilient Distributed Datasets` (RDD) are the `primary abstraction` in `Spark` - a fault-tolerant collection of elements that can be operated on in parallel
+### RDD Properties
+
+> What's a RDD
+
+```sh
+A: Distributed collection of objects on disk
+B: Distributed collection of objects in memory
+C: Distributed collection of objects in Cassandra
+
+Answer: could be any of the above!
+```
+
+> Scientific Answer: RDD is an Interface!
+
+Internally, each RDD is characterized by five main properties
+
+```
+1. `set of paritions` ("splits" in Hadoop)                            | 
+2. `list of dependencies` on parent RDDs                              | lineage
+3. `compute`: A function for *computing* each split                   |
+4. (Optional) `preferred location(s)` to compute each split on        + 
+	* e.g. to say that RDD is hash-partitioned                        + optiomized 
+5. (Optional) `partiononer` (hash, range)                             + execution
+	* e.g. block locations for an HDFS file                           +
+```
+
+> The first three `paritions`, `dependences`, `compute` are provide spark which enough lineage informations to recompute any of RDDs
+
+
+> And the fourth and the fifth are `partitioner`, `preferred locations` which give spark more informations about how data is structured and its distributed so spark scheduler and optimize the program better to reduce demanded i/o and network i/o needed
+
+
+**Example HadoopRDD**
+
+*paritions* = one per HDFS block
+
+*dependencies* = none
+
+*compute(part)* = read corresponding block
+
+*preferredLocations(part)* = HDFS block location
+
+*partitioner* = none
+
+**Example FilteredHDD**
+
+*paritions* = same as parent RDD 
+
+*dependencies* = "one-to-one" on parent
+
+*compute(part)* = compute parent and filter it 
+
+*preferredLocations(part)* = none (ask parent) 
+
+*partitioner* = none
+
+**JoinedRDD**
+
+*paritions* = one per reduce task 
+
+*dependencies* = "shuffle" on each parent 
+
+*compute(partition)* = read and join shuffled data 
+
+*preferredLocations(part)* = none
+
+*partitioner* = HashPartitioner(numTasks) 
+
+### Dependency Types
+
+**Narrow** (pipeline-able) vs **Wide** (shuffle)
+
+![](/assets/spark_dependency_types.png)
+
+### Life of a Spark Application
+
+#### Spark Application
+
+![](/assets/spark_application.png)
+
+The big different between Spark and Hadoop MapReduce is Spark actually runs jobs or tasks in threads in thread-pool on each of Executors where Hadoop MapReduce runs tasks in higher hole in highway using processes.
+
+### Job Scheduling Process
+
+![](/assets/spark_job_scheduling.png)
+
+#### DAG Scheduler
+
+Input: RDD and partitions to compute
+
+Output: output from actions on those partitions
+
+**Roles**
+
+* Build stages of tasks
+* Submit them to lower level scheduler (e.g. YARN, Mesos, Standalone) as ready
+* Lower level scheduler will schedule data based on locality
+* Resubmit failed stages if outputs are lost
+
+#### Scheduler Optimizations
+
+![](/assets/spark_scheduler_optimization.png)
+
+#### Task
+
+> Unit of work to execute on in an executor thread
+
+Unlike MR, there is no "map" vs "reduce" task
+
+Each task either partitions its output for "shuffle", or send the output back to the driver
+
+#### Shuffe
+
+![](/assets/spark_shuffle_1.png)
+
+![](/assets/spark_shuffle_2.png)
+
+## Spark Programming
+
+### SparkContext
+
+* `First thing` that a `Spark program` does is create `SparkContext` object, which tells Spark `how to access` a cluster.
+	* In the shell for either Scala or Python, this is the sc variable, which is created automatically
+* `Other programs` must use a constructor to instantiate a `new SparkContext`
+* Then in turn `SparkContext` gets used to create `other variables`.
+
+### Master
+
+The `master` parameter for a `SparkContext` determines which cluster to use
+
+| master              | description                                                            |
+|---------------------|:----------------------------------------------------------------------:|
+| local               | run Spark locally which one worker thread (no parallelism)             |
+| local[K]            | run Spark locally with K worker threads (ideally set to #cores)        |
+| spark://HOST:PORT   | connect to a Spark standalone cluster                                  |
+| mesos://HOST:PORT   | connect to a Mesos cluster                                                                        |
+
+### Clusters
+
+![](http://spark.apache.org/docs/latest/img/cluster-overview.png)
+
+Spark applications run as independent sets of processes on a cluster, coordinated by the SparkContext object in your main program (called the driver program).
+
+* Specifically, to run on a cluster, the `SparkContext` can connect to several types of `cluster managers` (either Spark’s own standalone cluster manager or Mesos/YARN), which `allocate resources` across applications.
+* Once connected, Spark acquires `executors` on nodes in the cluster, which are processes that `run computations` and `store data` for your application.
+* Next, it sends your `application code` (defined by JAR or Python files passed to SparkContext) to the `executors`.
+* Finally, SparkContext sends `tasks` for the `executors` to run.
+
+### RDD
+
+Resilient Distributed Datasets (RDD) are the primary abstraction in Spark - a fault-tolerant collection of elements that can be operated on in parallel
+
+### RDD Actions
+
+##### **`transformations`**
+
+Transformations create a new dataset from an existing one
+
+All transformations in Spark are `lazy`: they do not compute their results right away - instead they remember the transformations applied to some base dataset
+
+* optimize the required calculations
+* recover from lost data partitions
+
+**API**
+
+* map(func)                               
+* filter(func)                            
+* flatMap(func)                           
+* sample(withReplacement, fraction, seed) 
+* union(otherDataset)                     
+* distinct([numTasks])                    
+
+##### **`actions`**
+
+Actions, which `return a value` to the driver program after running a computation on the dataset. 
+
+**API**
+
+* reduce(func)
+* collect()
+* count()
+* first()
+* take(n)
+* takeSample(withReplacement, fraction, seed)
+* saveAsTextFile(path)
+* saveAsSequenceFile(path)
+* countByKey()
+* foreach(func)
+
+**Sample**
+
+```scala
+val f = sc.textFile("README.md")
+val words = f.flatMap(l => l.split(" ")).map(word => (word, 1))
+words.reducebykey(_ + _).collect.foreach(println)
+```
+
+`collect`, `foreach` are actions
+
+### **Persistence**
+
+Spark can `persist` (or `cache`) a dataset in memory across operations
+
+Each node stores in memory any slices of it that it computes and reuses them in other action on that dataset - often making future actions more than 10x faster.
+
+The cache is `fault-tolerant`: if any partition of an RDD is lost, it will automatically be recomputed using the transformations that originally created it.
+
+transformations: `MEMORY_ONLY`, `MEMORY_AND_DISK`, `MEMORY_ONLY_SER`, `MEMORY_AND_DISK_SER`, `DISK_ONLY`, `MEMORY_ONLY_2`, `MEMORY_AND_DISK_2`
+
+### Shared Variables
+
+#### Broadcast Variables
+
+Broadcast variables let programmer keep a read-only variable cached on each machine rather than shipping a copy of it with tasks.
+
+For example, to give every node a copy of a large input dataset efficiently
+
+Spark also attempts to distribute broadcast variables using efficient broadcast algorithms to reduce communication cost.
+
+```
+val boardcastVar = sc.broadcast(Array(1, 2, 3))
+boardcastvar.value
+```
+
+#### Accumulators
+
+Accumulators are variables that can only be 'added' to through an `associative` operation.
+
+Used to implement counters and sums, efficiently in parallel
+
+Spark natively supports accumulators of numeric value types and standard mutable collections, and programmers can extend for new types.
+
+Only the driver program can read an accumulators's value, not the tasks.
+
+```scala
+val accum = sc.accumulator(0)
+sc.parallelize(Array[1, 2, 3, 4]).foreach(x => accum += x)
+
+accum.value // driver-side
+```
+
+### Storage Systems
+
+Spark can create `RDDs` from any `file stored in HDFS` or other storage systems supported by Hadoop, e.g., `local file system`, `Amazone S3`, `Hypertable`, `Hbase`,..
+
+Spark supports tet files, SequenceFiles, and any other Hadoop InputFormat, and can also take a directory or a glob (e.g. /data/201404\*)
+
+![](/assets/rdd_files.png)
+
+> load HDFS file to RDD
+
+```scala
+val file = spark.textFile("hdfs://...")
+val errors = file.filter(line => line.contains("ERROR"))
+// Count all the errors
+errors.count()
+// Count errors mentioning MySQL
+errors.filter(line => line.contains("MySQL")).count()
+// Fetch the MySQL errors as an array of strings
+errors.filter(line => line.contains("MySQL")).collect()
+```
+
+> load HDFS file to HBase
+
+```scala
+val sparkConf = new SparkConf().setAppName("HBaseTest")
+val sc = new SparkContext(sparkConf)
+val conf = HBaseConfiguration.create()
+conf.set(TableInputFormat.INPUT_TABLE, args(0))
+
+// Initialize hBase table if necessary
+val admin = new HBaseAdmin(conf)
+if (!admin.isTableAvailable(args(0))) {
+ val tableDesc = new HTableDescriptor(args(0))
+ admin.createTable(tableDesc)
+}
+
+val hBaseRDD = sc.newAPIHadoopRDD(conf, classOf[TableInputFormat],
+ classOf[org.apache.hadoop.hbase.io.ImmutableBytesWritable],
+ classOf[org.apache.hadoop.hbase.client.Result])
+
+hBaseRDD.count()
+
+sc.stop()
+```
+
+## Spark SQL
 
 Uniform interface for data access
 
-### Spark MLlib
+### Example
+
+```scala
+val sqlContext = new org.apache.spark.sql.SQLContext(sc)
+import sqlContext._
+
+// define the schema using a case class
+case class Person(name: String, age: Int)
+
+// create an RDD of Person objects and register it as a table
+val people = sc.textFile("examples/src/main/resources/people.txt")
+				.map(_.split(","))
+				.map(p => Person(p(0), p(1).trim.toInt))
+
+people.registerAsTable("people")
+
+// SQL statements can be run by using the sql methods provided by sqlContext
+val teenagers = sql("SELECT name FROM people WHERE age >= 13 AND age <= 19")
+
+// the results of SQL queries are SchemaRDDs and supprots all the
+// normal RDD operations
+// the columns of a row in the result can be accessed by ordinal
+teenagers.map(t => "Name: " + t(0)).collect().foreach(println)
+```
+
+## Spark Streaming
+
+> Spark Streaming extends the core API to allow high-throughput, fault-tolerant stream processing of live data streams.
+
+![](/assets/spark_streaming_flow.png)
+
+### Resources
+
+* http://spark.apache.org/docs/latest/streaming-programming-guide.html
+* 2011, Discretized Streams: An Efficient and Fault-Tolerant Model for Stream Processing on Large Clusters, *Matei Zaharia, Tathagata Das, Haoyuan Li, Scott Shenker, Ion Stoica University of California, Berkeley*, https://www.cs.berkeley.edu/~matei/papers/2012/hotcloud_spark_streaming.pdf
+
+Data can be ingested from many sources: Kafka, Flume, Twitter, ZeroMQ, TCP sockets, etc
+
+Results can be pushed out to filesystems, databases, live dashboard, etc
+
+Spark's build-in manchine learning algorithms and graph processing algorithms can be applied to data streams
+
+![](/assets/spark_streaming.png)
+
+### Comparisons
+
+* Twitter: Storm
+* Yahoo!: S4
+* Google: MillWhell
+
+### Examples
+
+> streaming.NetworkWordCount
+
+```scala
+object NetworkWordCount {
+  def main(args: Array[String]) {
+    if (args.length < 2) {
+      System.err.println("Usage: NetworkWordCount <hostname> <port>")
+      System.exit(1)
+    }
+
+    StreamingExamples.setStreamingLogLevels()
+
+    // Create the context with a 1 second batch size
+    val sparkConf = new SparkConf().setAppName("NetworkWordCount")
+    val ssc = new StreamingContext(sparkConf, Seconds(1))
+
+    // Create a socket stream on target ip:port and count the
+    // words in input stream of \n delimited text (eg. generated by 'nc')
+    // Note that no duplication in storage level only for running locally.
+    // Replication necessary in distributed scenario for fault tolerance.
+    val lines = ssc.socketTextStream(args(0), args(1).toInt, StorageLevel.MEMORY_AND_DISK_SER)
+    val words = lines.flatMap(_.split(" "))
+    val wordCounts = words.map(x => (x, 1)).reduceByKey(_ + _)
+    wordCounts.print()
+    ssc.start()
+    ssc.awaitTermination()
+  }
+}
+```
+
+```sh
+# in on terminal run the NetworkWordCount example in Spark Streaming
+# expecting a data stream on the localhost:9999 TCP socket
+./bin/run-example org.apache.spark.examples.streaming.Networkwordcount localhost 9999
+```
+
+```sh
+# in another terminal use Netcat http://nc110.sourceforge.net/
+# to generte a data stream on the localhost:9999 TCP socket
+$ nc -lk 9999
+hello world
+hi there fred
+what a nice world there
+```
+
+## Spark MLlib
 
 `2014`
 
 Standark library of machine learning algorithms
 
-## Data Mining
+* Scalable and fast
+* Simple development environment
+* Part of Apache Spark Ecosystem
 
-### Map Reduce
+### Overview
 
-#### Combiners
+> MLbase aims to simplify development and deployment of ML pipelines
 
-Combiner combines the values of all keys of a single mapper (single node)
+![](/assets/spark_mlbase_mllib.png)
 
-![](/assets/1.png)
+**MLOpt**: Autotuners for ML pipelines
 
-#### Partition
+**MLI**: experimental API to simplify ML development
 
-### Graph
+**MLlib**: Spark's core ML library
 
-* Technological Network (Seven Bridges of Konigsberd) 
+#### Algorithms
 
-#### Web as a Graph
+* classification: logistic regression, linear support vector machines (SVM), naive Bayes, decision trees
+* regression: linear regression, regression trees
+* collaborative filtering: alternating least squares (ALS)
+* clustering: k-means
+* optimization: stochastic gradient descent, limited-memory BFGS (L-BFGS)
+* dimensionality reduction: singular value decomposition (SVD), principal component analysis (PCA)
 
-Web as a directed graph
+#### Exploiting Sparsity
 
-* Node: Webpages
-* Edges: Hyperlinks
+Sparse data is prevalent
 
-How to organize the Web?
-
-* First try: Human curated **Web directories**
-* Second try: Web Search
-	* Information Retrieval investigates: Find releveant docs in a small and trusted set
-	* BUt: Web is huge, full of untrusted documents, random things, web spam, etc
-
-Web Serch: 2 Challenges
-
-2 challenges of web search
-
-1. Web contains many sources of information. Who to "trust"?
-2. What is the "best" answer to query "newspaper"?
-
-Ranking Nodes on the Graph
-
-* All web pages are not equally "important"
-* There is large diversity in the web-graph node connectivity
-
-Link Analysis Algoritms
-
-We will cover the following Link Analysis approaches for computing importances of nodes in a graph:
-
-* Page Rank
-* Hubs and Authorities (HITS)
-* Topic-Specific (Personalized) Page Rank
-* Web Spam Dectection Algorithms
-
-#### Page Rank
-
-* Links as Votes
+* Text processing: bag-of-words, n-grams
+* Collaborative Filtering: rating matrix
+* Graphs: adjacency matrix
+* Genomics: SNPs, variant calling
 
 
+MLlib supports sparese storage and computation
+
+* classification
+* k-means
+* summary statstics
+
+Example: Exploiting sparsity: K-means
+
+Traning set:
+
+* 12 million examples
+* 500 features
+* sparsity: 10%
+
+|          |    dense     |    sparse   |
+|----------|--------------|-------------|
+| storage  |    47GB      |    7GB      |
+| time     |    240s      |    58s      |
+
+
+40GB savings in storage, 4x speedup in computation
+
+### Example
+
+#### K-means: Parition points into k clusters
+
+```scala
+// load and parse the data
+val data = sc.textFile("kmeans_data.txt")
+val parsedData = data.map(_split(' ')) .map(_.toDouble).cache()
+
+// cluster the data into five classes using KMeans
+val clusters = KMeans.train(parsedData, 5, numItertions = 20)
+
+// compute the sum of squared erros
+val cost = clusters.computeCost(parsedData)
+println("Sum of squared errors = " + cost)
+```
+
+#### Dimensionality reduction + Kmeans
+
+```
+// compute principal components
+val points: RDD[Vector] = ...
+val mat = RowMatrix(points)
+val pc = mat.computePrincipalComponents(20)
+
+// project points to a low-dimensional space
+val projected = mat.multiply(pc).rows
+
+// train a k-means model on the projected data
+val model = KMeans.train(projected, 10)
+```
+
+### Roadmap
+
+## GraphX
+
+Extends the distributed fault-tolerant collections API and interactive console of Spark with a new graph API which leverages recent advances in graph systems (e.g., GraphLab to enable users to easily and interactively build, transform, and reason about graph structured data at scale.
+
+## Advaced Topic
+
+Other **BDAS** projects running atop Spark for graphs, sampling, and memory sharing
+
+* BlinkDB, http://blinkdb.org
+	* *massively parallel, approximate query engine for running interactive SQL queries on large volumes of data*, allows users to trade-off query accuracy for response time, enables interactive queires over massive data by running queries on data samples, presents results annotated with meaning full error bars.
+* Tachyon, http://tachyon-project.org/
+	* fault tolerant distributed file system enabling reliable file sharing at memory-speed across cluster framework
+	* achieves high performance by leveraging lineage information and using memory aggressively
+	* caches working set files in memory thereby avoiding going to disk to load datasets that are frequently read
+	* enables diffrent jobs/queries and frameworks to access cached files at memory speed.
+
+## Spark in Production
+
+In the following, let's consider the progression through a full software development lifecycle, step by step:
+
+0. Installing
+1. build
+2. deploy
+3. monitor
+
+### Installing
+
+**Step 1**: Install Java JDK 6/7
+
+```
+http://oracle.com/technetwork/java/javase/downloads/jdk7-downloads-188026.html
+sudo apt-get -y install openjdk-7-jdk
+```
+
+**Step 2**: Download Spark
+
+```
+http://spark.apache.org/downloads.html
+```
+
+**Step 3**: Run Spark Shell
+
+```
+# run spark shell
+./bin/spark-shell
+```
+
+**Step 4**: Play with simple example
+
+```scala
+# create some data
+val data = 1 to 10000
+# create an RDD based on that data
+val distData = sc.parallelize(data)
+# use a filter to select values less than 10
+distData.filter(_ < 10).collect()
+```
+### Build
+
+* build/run a JAR using Java + Maven
+* SBT primer
+* build/run a JAR using Scala + SBT
+
+#### Build/run a JAR using Java + Maven
+
+#### SBT Primer
+
+SBT is the **S**imple **B**uild **T**ool for Scala
+
+http://www.scala-sbt.org/
+
+This is included with the Spark download, and does not need to be installed separately
+
+Similar to Maven, however it provides for *incremental compilation* and an *interactive shell*, among other innovations.
+
+SBT project uses StackOverflow for Q&A, that's a good resource to study further http://stackoverflow.com/tags/sbt
+
+**Workflow**
+
+The following sequence shows how to build a JAR file from a Scala app, using SBT
+
+* First, this requires the "source" download, not the "binary"
+* Connect into the `SPARK_HOME` directory
+* Then run the following commands
+
+```
+# Scala source + SBT build script on following slides
+
+cd simple-app
+
+../sbt/sbt -Dsbt.ivy.home=../sbt/ivy package
+
+../spark/bin/spark-summit \
+	--class "SimpleApp"  \
+	--master local[*] \
+	target/scala-2.10/simple-project_2.10-1.0.jar
+```
+
+#### Build/run a JAR using Scala + SBT
+
+### Deploy
+
+Deploy JAR to Hadoop cluster, using these alternatives:
+
+* Run atop Apache Mesos
+* Install on CM
+* Run on HDP
+* Run on MapR
+* Run on EC2
+* Using SIMR (run shell within MR job)
+* ... or, simple run the JAR on YARN 
+
+#### Example
+
+**Running on YARN**
+
+```sh
+./bin/spark-submit --class path.to.your.Class -master yarn-cluster [options] <app jar> [app options]
+```
+
+```
+./bin/spark-submit --class org.apache.spark.examples.SparkPi \
+	--master yarn-cluster \
+	--num-executors 3 \
+	--driver-memory 4 \
+	--executor-memory 2g \
+	--lib/spark-examples*.jar
+	10
+```
+
+### Monitor
+
+#### Performance Debugging
+
+Distributed performance: program slow due to scheduling, coordination, or data distribution
+
+Local performance: program slow because whatever I'm running is just slow on a single node
+
+Two usefule tools:
+
+* Application Web UI (default port 4040)
+* Executor logs (spark/work)
+
+#### Find Slow Stage(s)
+
+![](/assets/spark_find_slow_stage.png)
+
+#### Stragglers
+
+![](/assets/spark_stragglers.png)
+
+
+![](/assets/spark_stragglers_executor.png)
+
+#### Stragglers due to slow nodes
+
+```scala
+// strugglers due to slow nodes
+
+sc.parallelize(1 to 15, 15).map { index => 
+	val host = java.net.InetAddress.getLocalHost.getHostName
+	if(host == "ip-172-31-2-222") {
+		Thread.sleep(10000)
+	} else {
+		Thread.sleep(1000)
+	}
+}.count()
+```
+
+Turn speculation on to mitigates this problem.
+
+Speculation: Spark identifies slow tasks (by looking at runtime distribution), and re-launches those tasks on other nodes)
+
+```
+spark.specualtion true
+```
+
+#### Stragglers due to data skew
+
+```scala
+sc.parallelize(1 to 15, 15)
+	.flatMap { i => 1 to i }
+	.map { i => Thread.sleep(1000) }
+	.count()
+```
+Speculation is not going to help beacause the problem is inherent in the algorithm/data
+
+Pick a different algorithm or restructure the data
+
+#### Tasks are just slow
+
+##### Garbage collection
+
+Look at the GC time
+
+##### Performance of the code running in each task
+
+##### jmap: heap analysis
+
+```
+jmap -histo [pid]
+```
+
+Get a histogram of objects in the JVM heap
+
+```
+jmap -histo:live [pid]
+```
+
+Get a histogram of objects in the heap after GC (thus "live")
+
+##### Reduce GC impact
+
+```
+class DummyObject(var i: Int) {
+	def toInt = i
+}
+
+sc.parallelize(1 to 100 * 1000 * 1000, 1).map { i =>
+	new Dummyobject(i) // new object every record
+	obj.toInt
+}
+
+sc.parallelize(1 to 100 * 1000 * 1000, 1).mapPartitions { iter => 
+	val obj = new Dummyobject(0) // reuse the same object
+	iter.map { i =>
+		obj.i = i
+		obj.toInt
+	}
+}
+```
+
+#### Local Performance
+
+Each Spark executor runs a JVM/Python process
+
+`jstack`, `YourKit`
+
+Run in local mode (i.e. Spark master "local") and debug with your favorite debugger
+
+* IntelJ
+* Eclipse
+* println
+## Case Studies
+
+Spark at Twitter: Evalution & Lessons Learnt, **Sriram Krishnan**
+
+> Spark can be more iteractive, efficent than MR
+
+* Support for iterative algorithms and caching
+* More generic than traidional MapReduce
+
+> Why is Spark faster than Hadoop MapReduce
+
+* Fewer I/O synchronization barriers
+* Less expensive shuffle
+* More comple the DAG, greater the performance improvement
+
+### Hadoop MapReduce vs Spark
+
+#### Classical Example: Word Count
+
+<table>
+
+<thead>
+<tr>
+<th>Hadoop MapReduce</th>
+<th>Spark</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+
+<td>
+<div class="highlight">
+<pre>
+<code>
+public static class WordCountMapClass extends MapReduceBase
+	implements Mapper <LongWritable, Text, Text, IntWritable> {
+		private final static IntWritable = new IntWritable[1];
+		private Text word = new Text();
+
+		public void map(LongWritable key, Text value,
+						OutputColectorText<Text, IntWritable> output,
+						Reporter reporter) throws IOException {
+			String line = value.toString();
+			StringTokenizer iter = new Stringtokenizer(line);
+			while (itr.hasMoreTokens()) {
+				word.set(itr.nextToken());
+				output.collect(word, one);
+			}
+		}
+	}
+
+public static class WordCountReduce extends MapReduceBase
+	implements Reducer <Text, IntWritable, Text, IntWritable> {
+		public void reduce(Text key, Iterator<IntWritable> values,
+							OutputCollector <Text, IntWritable> output,
+							Reporter reporter throws IOException {
+			int run = 0;
+			while (values.hasNext()){
+				sum += values.next().get();
+			}
+			output.collect(key, new Intwritable(sums);
+		}
+	}
+</code>
+</pre>
+</div>
+</td>
+
+<td>
+<div class="highlight">
+<pre>
+<code>
+val spark = new SparkContext(master, appName, [sparkHome], [jars])
+val file = spark.textFile("hdfs://..")
+val counts = file.flatMap(line => line.split(" "))
+				 .map(word => (word, 1)
+				 .reduceByKey(_ + _)
+counts.saveAsTextFile("hdfs://...);
+</code>
+</pre>
+</div>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>

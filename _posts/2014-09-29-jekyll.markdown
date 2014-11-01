@@ -2,7 +2,7 @@
 layout: post
 title:  "Jekyll"
 date:   2014-09-29 09:27:15
-categories: jekyll
+categories: tools 
 ---
 
 # Jekyll

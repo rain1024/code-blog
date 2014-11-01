@@ -1,0 +1,95 @@
+---
+layout: post
+title:  "Math"
+date:   2014-10-14 09:27:15
+categories: os 
+---
+
+## Greek Letters
+
+| L | l  | Pronuncation |                      |
+|---|----|--------------|----------------------|
+| Α | α  | Alpha        |	                   |
+| Β | β  | Beta	        |                      |
+| Γ | γ  | Gamma	    |                      |
+| Δ | δ  | Delta	    |                      |
+| Ε | ε  | Epsilon      |                      |
+| Ζ | ζ  | Zeta	        |                      |
+| Η | η  | Eta	Ττ      |                      |
+| Θ | θ  | Theta	    |                      |
+| Ι | ι  | Iota	        |                      |
+| Κ | κ  | Kappa	    |                      |
+| Λ | λ  | Lambda       |                      |
+| Μ | μ  | Mu           |                      |
+| Ω | ω  | Omega        |                      |
+| Ν | ν  | Nu           |                      |
+| Ξ | ξ  | Xi           |                      |
+| Ο | ο  | Omicron      |                      |
+| Ρ | ρ  | Rho          |                      |
+| Σ | σς | Sigma        |                      |
+| Τ | τ  | Tau          |                      |
+| Υ | υ  | Upsilon      |                      |
+| Φ | φ  | Phi          |                      |
+| Χ | χ  | Chi          |                      |
+| Ψ | ψ  | Psi          |                      |
+
+### Constants
+
+| L | l  | Pronuncation |                      |
+|---|----|--------------|----------------------|
+| Π | π  | Pi           |                      |
+
+### Variables
+| L | l  | Pronuncation | Meaning              |
+|---|----|--------------|----------------------|
+| t |    |              |                      |
+| s |    |              |                      |
+| t |    |              |                      |
+| t |    |              |                      |
+| t |    |              |                      |
+| t |    |              |                      |
+| t |    |              |                      |
+| t |    |              |                      |
+
+* [math letter conventions](http://www.mr-ideahamster.com/classes/assets/math_letter_conventions.pdf)
+
+## Vector
+
+### Inner Product
+
+[wiki](http://en.wikipedia.org/wiki/Inner_product_space)
+#### Examples
+
+$ \left \langle \begin{bmatrix} x_1 \\ \vdots \\ x_n \end{bmatrix},\begin{bmatrix} y_1 \\ \vdots \\ y_n \end{bmatrix} \right\rangle := x^\text{T} y = \sum_{i=1}^n x_i y_i = x_1 y_1 + \cdots + x_n y_n $
+
+## Graph Theory
+
+
+## Matrix
+
+### Eginevalue and Eginevector
+
+## Set theory
+
+### Pairing Function
+
+#### Cantor pairing function
+
+The Cantor pairing function assigns one natural number to each pair of natural numbers
+The Cantor pairing function is a pairing function
+
+$$π:N×N→N$$
+
+defined by
+
+$$π(k_1,k_2):=\frac{(k_1+k_2)(k_1+k_2+1)}{2}+k_2.$$
+
+When we apply the pairing function to $k_1$ and $k_2$ we often denote the resulting number as $⟨k_1,k_2⟩$.
+
+This definition can be inductively generalized to the Cantor tuple function
+
+$$π(n):N^n→N$$
+
+as
+
+$$π(n)(k_1,…,k_{n−1},k_n) := π(π(n−1)(k_1,…,k_{n−1}),k_n).$$

@@ -21,5 +21,8 @@
     "underscore": "~1.7.0",
     "underscore.string": "~2.3.3",
     "fontawesome": "~4.2.0"
+  },
+  "devDependencies": {
+    "MathJax": "~2.4.0"
   }
 }

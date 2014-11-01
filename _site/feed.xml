@@ -4,33 +4,115 @@
     <title>Brother Rain</title>
     <description>coder
 </description>
-    <link>http://github.com/rain1024/</link>
-    <atom:link href="http://github.com/rain1024/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 09 Oct 2014 16:42:43 +0700</pubDate>
-    <lastBuildDate>Thu, 09 Oct 2014 16:42:43 +0700</lastBuildDate>
+    <link>127.0.0.1/</link>
+    <atom:link href="127.0.0.1/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 01 Nov 2014 18:54:37 +0700</pubDate>
+    <lastBuildDate>Sat, 01 Nov 2014 18:54:37 +0700</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Spark</title>
-        <description>&lt;h2&gt;Spark&lt;/h2&gt;
+        <title>Layout</title>
+        <description>&lt;h2&gt;Heading&lt;/h2&gt;
 
-&lt;p&gt;&lt;code&gt;2010&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;H2&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Apache Spark&lt;/strong&gt; is a fast and general-purpose &lt;em&gt;cluster computing system&lt;/em&gt;. It provides high-level APIs in Scala, Java, and Python that make parallel jobs easy to write, and an optimized engine that supports general computation graphs. It also supports a rich set of higher-level tools including Shark (Hive on Spark), MLlib for machine learning, GraphX for graph processing, and Spark Streaming.&lt;/p&gt;
+&lt;h3&gt;H3&lt;/h3&gt;
 
-&lt;h3&gt;Installing&lt;/h3&gt;
+&lt;h4&gt;H4&lt;/h4&gt;
 
-&lt;h3&gt;Spark SQL&lt;/h3&gt;
+&lt;h5&gt;H5&lt;/h5&gt;
 
-&lt;p&gt;Uniform interface for data access&lt;/p&gt;
+&lt;h2&gt;Paragraph&lt;/h2&gt;
 
-&lt;h3&gt;Spark MLlib&lt;/h3&gt;
+&lt;p&gt;Amet ipsum vitae accusamus nobis dolorem nobis est distinctio commodi. Deleniti repellendus eligendi nemo amet enim nulla doloribus hic. Expedita mollitia veritatis minus quidem ipsam? Quam fugiat neque quod magni.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;2014&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bold text here Amet ipsum vitae accusamus nobis dolorem nobis est distinctio commodi&lt;/strong&gt;. Deleniti repellendus eligendi nemo amet enim nulla doloribus hic. Expedita mollitia veritatis minus quidem ipsam? Quam fugiat neque quod magni.&lt;/p&gt;
 
-&lt;p&gt;Standark library of machine learning algorithms&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Italic text here Amet ipsum vitae accusamus nobis dolorem nobis est distinctio commodi&lt;/em&gt;. Deleniti repellendus eligendi nemo amet enim nulla doloribus hic. Expedita mollitia veritatis minus quidem ipsam? Quam fugiat neque quod magni.&lt;/p&gt;
 
-&lt;h2&gt;Data Mining&lt;/h2&gt;
+&lt;p&gt;This is an &lt;a href=&quot;http://example.com/&quot;&gt;example link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;block quote Lorem suscipit corrupti id ducimus reiciendis odit voluptatibus suscipit est facere, vel, maxime neque perspiciatis placeat laborum aspernatur est sequi? Minus consequuntur ab ipsum architecto dignissimos magnam aut nobis delectus!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;del&gt;Mistaken text.&lt;/del&gt;&lt;/p&gt;
+
+&lt;h2&gt;List&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Candy.&lt;/li&gt;
+&lt;li&gt;Gum.&lt;/li&gt;
+&lt;li&gt;Booze.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A list item.
+
+&lt;ul&gt;
+&lt;li&gt;With multiple paragraphs.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Another item in the list.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Table&lt;/h2&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Example&lt;/th&gt;
+&lt;th&gt;data&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;aaaa&lt;/td&gt;
+&lt;td&gt;bbbb&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;cccc&lt;/td&gt;
+&lt;td&gt;dddd&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eeee&lt;/td&gt;
+&lt;td&gt;ffff&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h2&gt;Code&lt;/h2&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stdlib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Hello World&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Math&lt;/h2&gt;
+
+&lt;p&gt;formular&lt;/p&gt;
+
+&lt;p&gt;$$x^2 + 2x + 1 = 0$$&lt;/p&gt;
+
+&lt;p&gt;inline math&lt;/p&gt;
+
+&lt;p&gt;$x^2 + 2x + 1$&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Nov 2014 00:11:15 +0700</pubDate>
+        <link>127.0.0.1/2014/11/02/layout.html</link>
+        <guid isPermaLink="true">127.0.0.1/2014/11/02/layout.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Data Mining</title>
+        <description>&lt;h2&gt;Data Mining&lt;/h2&gt;
 
 &lt;h3&gt;Map Reduce&lt;/h3&gt;
 
@@ -101,13 +183,1450 @@
 &lt;ul&gt;
 &lt;li&gt;Links as Votes&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h2&gt;Clustering&lt;/h2&gt;
+
+&lt;h3&gt;Community Detection in Graph&lt;/h3&gt;
+
+&lt;h4&gt;The model: community-affilication graph model&lt;/h4&gt;
+
+&lt;p&gt;&lt;svg width=&quot;500&quot; height=&quot;200&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+&amp;lt;!-- Created with SVG-edit - &lt;a href=&quot;http://svg-edit.googlecode.com/&quot;&gt;http://svg-edit.googlecode.com/&lt;/a&gt; --&amp;gt;
+&lt;g&gt;
+&lt;title&gt;Layer 1&lt;/title&gt;
+&lt;ellipse cx=&quot;100&quot; cy=&quot;160&quot; id=&quot;svg_3&quot; fill=&quot;#00ffff&quot; stroke=&quot;#000000&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;null&quot; opacity=&quot;0.9&quot; rx=&quot;10&quot; ry=&quot;10&quot;/&gt;
+&lt;ellipse cx=&quot;125&quot; cy=&quot;160&quot; id=&quot;svg_3&quot; fill=&quot;#00ffff&quot; stroke=&quot;#000000&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;null&quot; opacity=&quot;0.9&quot; rx=&quot;10&quot; ry=&quot;10&quot;/&gt;
+&lt;ellipse cx=&quot;150&quot; cy=&quot;160&quot; id=&quot;svg_3&quot; fill=&quot;#00ffff&quot; stroke=&quot;#000000&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;null&quot; opacity=&quot;0.9&quot; rx=&quot;10&quot; ry=&quot;10&quot;/&gt;
+&lt;ellipse cx=&quot;175&quot; cy=&quot;160&quot; id=&quot;svg_3&quot; fill=&quot;#00ffff&quot; stroke=&quot;#000000&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;null&quot; opacity=&quot;0.9&quot; rx=&quot;10&quot; ry=&quot;10&quot;/&gt;
+&lt;ellipse cx=&quot;200&quot; cy=&quot;160&quot; id=&quot;svg_3&quot; fill=&quot;#00ffff&quot; stroke=&quot;#000000&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;null&quot; opacity=&quot;0.9&quot; rx=&quot;10&quot; ry=&quot;10&quot;/&gt;
+&lt;ellipse cx=&quot;225&quot; cy=&quot;160&quot; id=&quot;svg_3&quot; fill=&quot;#FF0000&quot; stroke=&quot;#000000&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;null&quot; opacity=&quot;0.9&quot; rx=&quot;10&quot; ry=&quot;10&quot;/&gt;
+&lt;ellipse cx=&quot;250&quot; cy=&quot;160&quot; id=&quot;svg_3&quot; fill=&quot;#FF0000&quot; stroke=&quot;#000000&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;null&quot; opacity=&quot;0.9&quot; rx=&quot;10&quot; ry=&quot;10&quot;/&gt;
+&lt;ellipse cx=&quot;275&quot; cy=&quot;160&quot; id=&quot;svg_3&quot; fill=&quot;#FF0000&quot; stroke=&quot;#000000&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;null&quot; opacity=&quot;0.9&quot; rx=&quot;10&quot; ry=&quot;10&quot;/&gt;
+&lt;ellipse cx=&quot;300&quot; cy=&quot;160&quot; id=&quot;svg_3&quot; fill=&quot;#FF0000&quot; stroke=&quot;#000000&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;null&quot; opacity=&quot;0.9&quot; rx=&quot;10&quot; ry=&quot;10&quot;/&gt;
+&lt;ellipse cx=&quot;325&quot; cy=&quot;160&quot; id=&quot;svg_3&quot; fill=&quot;#00ff00&quot; stroke=&quot;#000000&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;null&quot; opacity=&quot;0.9&quot; rx=&quot;10&quot; ry=&quot;10&quot;/&gt;
+&lt;ellipse cx=&quot;350&quot; cy=&quot;160&quot; id=&quot;svg_3&quot; fill=&quot;#00ff00&quot; stroke=&quot;#000000&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;null&quot; opacity=&quot;0.9&quot; rx=&quot;10&quot; ry=&quot;10&quot;/&gt;
+&lt;ellipse cx=&quot;375&quot; cy=&quot;160&quot; id=&quot;svg_3&quot; fill=&quot;#00ff00&quot; stroke=&quot;#000000&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;null&quot; opacity=&quot;0.9&quot; rx=&quot;10&quot; ry=&quot;10&quot;/&gt;
+&lt;rect opacity=&quot;0.9&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; fill=&quot;#00ff00&quot; id=&quot;svg_4&quot; height=&quot;30&quot; width=&quot;30&quot; y=&quot;24&quot; x=&quot;295&quot;/&gt;
+&lt;rect opacity=&quot;0.9&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; fill=&quot;#00ffff&quot; id=&quot;svg_5&quot; height=&quot;30&quot; width=&quot;30&quot; y=&quot;22&quot; x=&quot;187&quot;/&gt;
+&lt;text xml:space=&quot;preserve&quot; text-anchor=&quot;middle&quot; font-family=&quot;serif&quot; font-size=&quot;24&quot; opacity=&quot;0.9&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;0&quot; stroke=&quot;#000000&quot; fill=&quot;#000000&quot; id=&quot;svg_7&quot; y=&quot;44&quot; x=&quot;203&quot;&gt;A&lt;/text&gt;
+&lt;text xml:space=&quot;preserve&quot; text-anchor=&quot;middle&quot; font-family=&quot;serif&quot; font-size=&quot;24&quot; opacity=&quot;0.9&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;0&quot; stroke=&quot;#000000&quot; fill=&quot;#000000&quot; id=&quot;svg_8&quot; y=&quot;45&quot; x=&quot;310&quot;&gt;B&lt;/text&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_9&quot; y2=&quot;153&quot; x2=&quot;101&quot; y1=&quot;59&quot; x1=&quot;194&quot;/&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_11&quot; y2=&quot;143&quot; x2=&quot;128&quot; y1=&quot;59&quot; x1=&quot;194&quot;/&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_12&quot; y2=&quot;142&quot; x2=&quot;157&quot; y1=&quot;64&quot; x1=&quot;191&quot;/&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_13&quot; y2=&quot;148&quot; x2=&quot;178&quot; y1=&quot;62&quot; x1=&quot;192&quot;/&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_14&quot; y2=&quot;135&quot; x2=&quot;179&quot; y1=&quot;147&quot; x1=&quot;178&quot;/&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_15&quot; y2=&quot;152&quot; x2=&quot;204&quot; y1=&quot;65&quot; x1=&quot;195&quot;/&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_16&quot; y2=&quot;148&quot; x2=&quot;225&quot; y1=&quot;66&quot; x1=&quot;200&quot;/&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_17&quot; y2=&quot;141&quot; x2=&quot;250&quot; y1=&quot;66&quot; x1=&quot;197&quot;/&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_18&quot; y2=&quot;145&quot; x2=&quot;273&quot; y1=&quot;66&quot; x1=&quot;198&quot;/&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_19&quot; y2=&quot;146&quot; x2=&quot;302&quot; y1=&quot;62&quot; x1=&quot;193&quot;/&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_20&quot; y2=&quot;144&quot; x2=&quot;227&quot; y1=&quot;58&quot; x1=&quot;304&quot;/&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_21&quot; y2=&quot;139&quot; x2=&quot;251&quot; y1=&quot;59&quot; x1=&quot;302&quot;/&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_22&quot; y2=&quot;146&quot; x2=&quot;273&quot; y1=&quot;61&quot; x1=&quot;302&quot;/&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_23&quot; y2=&quot;144&quot; x2=&quot;303&quot; y1=&quot;62&quot; x1=&quot;302&quot;/&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_24&quot; y2=&quot;144&quot; x2=&quot;325&quot; y1=&quot;61&quot; x1=&quot;302&quot;/&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_25&quot; y2=&quot;145&quot; x2=&quot;347&quot; y1=&quot;61&quot; x1=&quot;306&quot;/&gt;
+&lt;line opacity=&quot;0.9&quot; fill=&quot;none&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;2&quot; stroke=&quot;#000000&quot; id=&quot;svg_26&quot; y2=&quot;145&quot; x2=&quot;375&quot; y1=&quot;65&quot; x1=&quot;305&quot;/&gt;
+&lt;text xml:space=&quot;preserve&quot; text-anchor=&quot;middle&quot; font-family=&quot;serif&quot; font-size=&quot;20&quot; opacity=&quot;0.9&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;0&quot; stroke=&quot;#000000&quot; fill=&quot;#000000&quot; id=&quot;svg_30&quot; y=&quot;32&quot; x=&quot;170&quot;&gt;p&lt;/text&gt;
+&lt;text xml:space=&quot;preserve&quot; text-anchor=&quot;middle&quot; font-family=&quot;serif&quot; font-size=&quot;20&quot; opacity=&quot;0.9&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;0&quot; stroke=&quot;#000000&quot; fill=&quot;#000000&quot; id=&quot;svg_31&quot; y=&quot;49&quot; x=&quot;176&quot;&gt;A&lt;/text&gt;
+&lt;text xml:space=&quot;preserve&quot; text-anchor=&quot;middle&quot; font-family=&quot;serif&quot; font-size=&quot;20&quot; opacity=&quot;0.9&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;0&quot; stroke=&quot;#000000&quot; fill=&quot;#000000&quot; id=&quot;svg_32&quot; y=&quot;30&quot; x=&quot;277&quot;&gt;p&lt;/text&gt;
+&lt;text id=&quot;svg_33&quot; xml:space=&quot;preserve&quot; text-anchor=&quot;middle&quot; font-family=&quot;serif&quot; font-size=&quot;20&quot; opacity=&quot;0.9&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;0&quot; stroke=&quot;#000000&quot; fill=&quot;#000000&quot; y=&quot;69&quot; x=&quot;196&quot;&gt;A&lt;/text&gt;
+&lt;text id=&quot;svg_34&quot; xml:space=&quot;preserve&quot; text-anchor=&quot;middle&quot; font-family=&quot;serif&quot; font-size=&quot;20&quot; opacity=&quot;0.9&quot; stroke-dasharray=&quot;null&quot; stroke-width=&quot;0&quot; stroke=&quot;#000000&quot; fill=&quot;#000000&quot; y=&quot;51&quot; x=&quot;280&quot;&gt;B&lt;/text&gt;
+&lt;/g&gt;
+&lt;/svg&gt;&lt;/p&gt;
+
+&lt;p&gt;AGM: Affiliation Graph Model: a generative model $B(V, C, M, {p_c})$ for graphs:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Nodes $V$, Communities $C$, Memeberships $M$&lt;/li&gt;
+&lt;li&gt;Each community $c$ has a single probability $p_c$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5&gt;AGM generates the links&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;For each pair of nodes in community $A$, we connect them with prob $P_A$&lt;/li&gt;
+&lt;li&gt;The overall edge probability is:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;$P(u, v) = \prod _ {c \in M_u \cap M_v } (1 - p_c)$&lt;/p&gt;
+
+&lt;h5&gt;AGM Flexibility&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;AGM can express a variety of community structures: non-overlapping, overlapping, nested&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;BigCLAM&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Relaxation: Memberships have strengths&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;$F_uA$: the membership strength of node $u$ to community $A$ $ F_{uA} = 0 $: no membership&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Each community A links nodes indenpendently:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;$$ P_A(u,v) = 1 - exp(-F_uA * F_vA)$$&lt;/p&gt;
+
+&lt;h3&gt;Spectural Clustering&lt;/h3&gt;
+</description>
+        <pubDate>Thu, 16 Oct 2014 16:27:15 +0700</pubDate>
+        <link>127.0.0.1/ai/2014/10/16/data-mining.html</link>
+        <guid isPermaLink="true">127.0.0.1/ai/2014/10/16/data-mining.html</guid>
+        
+        
+        <category>ai</category>
+        
+      </item>
+    
+      <item>
+        <title>Math</title>
+        <description>&lt;h2&gt;Greek Letters&lt;/h2&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;L&lt;/th&gt;
+&lt;th&gt;l&lt;/th&gt;
+&lt;th&gt;Pronuncation&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Α&lt;/td&gt;
+&lt;td&gt;α&lt;/td&gt;
+&lt;td&gt;Alpha&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Β&lt;/td&gt;
+&lt;td&gt;β&lt;/td&gt;
+&lt;td&gt;Beta&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Γ&lt;/td&gt;
+&lt;td&gt;γ&lt;/td&gt;
+&lt;td&gt;Gamma&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Δ&lt;/td&gt;
+&lt;td&gt;δ&lt;/td&gt;
+&lt;td&gt;Delta&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ε&lt;/td&gt;
+&lt;td&gt;ε&lt;/td&gt;
+&lt;td&gt;Epsilon&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ζ&lt;/td&gt;
+&lt;td&gt;ζ&lt;/td&gt;
+&lt;td&gt;Zeta&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Η&lt;/td&gt;
+&lt;td&gt;η&lt;/td&gt;
+&lt;td&gt;Eta    Ττ&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Θ&lt;/td&gt;
+&lt;td&gt;θ&lt;/td&gt;
+&lt;td&gt;Theta&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ι&lt;/td&gt;
+&lt;td&gt;ι&lt;/td&gt;
+&lt;td&gt;Iota&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Κ&lt;/td&gt;
+&lt;td&gt;κ&lt;/td&gt;
+&lt;td&gt;Kappa&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Λ&lt;/td&gt;
+&lt;td&gt;λ&lt;/td&gt;
+&lt;td&gt;Lambda&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Μ&lt;/td&gt;
+&lt;td&gt;μ&lt;/td&gt;
+&lt;td&gt;Mu&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ω&lt;/td&gt;
+&lt;td&gt;ω&lt;/td&gt;
+&lt;td&gt;Omega&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ν&lt;/td&gt;
+&lt;td&gt;ν&lt;/td&gt;
+&lt;td&gt;Nu&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ξ&lt;/td&gt;
+&lt;td&gt;ξ&lt;/td&gt;
+&lt;td&gt;Xi&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ο&lt;/td&gt;
+&lt;td&gt;ο&lt;/td&gt;
+&lt;td&gt;Omicron&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ρ&lt;/td&gt;
+&lt;td&gt;ρ&lt;/td&gt;
+&lt;td&gt;Rho&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Σ&lt;/td&gt;
+&lt;td&gt;σς&lt;/td&gt;
+&lt;td&gt;Sigma&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Τ&lt;/td&gt;
+&lt;td&gt;τ&lt;/td&gt;
+&lt;td&gt;Tau&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Υ&lt;/td&gt;
+&lt;td&gt;υ&lt;/td&gt;
+&lt;td&gt;Upsilon&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Φ&lt;/td&gt;
+&lt;td&gt;φ&lt;/td&gt;
+&lt;td&gt;Phi&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Χ&lt;/td&gt;
+&lt;td&gt;χ&lt;/td&gt;
+&lt;td&gt;Chi&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ψ&lt;/td&gt;
+&lt;td&gt;ψ&lt;/td&gt;
+&lt;td&gt;Psi&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3&gt;Constants&lt;/h3&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;L&lt;/th&gt;
+&lt;th&gt;l&lt;/th&gt;
+&lt;th&gt;Pronuncation&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Π&lt;/td&gt;
+&lt;td&gt;π&lt;/td&gt;
+&lt;td&gt;Pi&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3&gt;Variables&lt;/h3&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;L&lt;/th&gt;
+&lt;th&gt;l&lt;/th&gt;
+&lt;th&gt;Pronuncation&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;t&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;s&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;t&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;t&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;t&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;t&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;t&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;t&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.mr-ideahamster.com/classes/assets/math_letter_conventions.pdf&quot;&gt;math letter conventions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Vector&lt;/h2&gt;
+
+&lt;h3&gt;Inner Product&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Inner_product_space&quot;&gt;wiki&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4&gt;Examples&lt;/h4&gt;
+
+&lt;p&gt;$ \left \langle \begin{bmatrix} x_1 \ \vdots \ x_n \end{bmatrix},\begin{bmatrix} y_1 \ \vdots \ y_n \end{bmatrix} \right\rangle := x^\text{T} y = \sum_{i=1}^n x_i y_i = x_1 y_1 + \cdots + x_n y_n $&lt;/p&gt;
+
+&lt;h2&gt;Graph Theory&lt;/h2&gt;
+
+&lt;h2&gt;Matrix&lt;/h2&gt;
+
+&lt;h3&gt;Eginevalue and Eginevector&lt;/h3&gt;
+
+&lt;h2&gt;Set theory&lt;/h2&gt;
+
+&lt;h3&gt;Pairing Function&lt;/h3&gt;
+
+&lt;h4&gt;Cantor pairing function&lt;/h4&gt;
+
+&lt;p&gt;The Cantor pairing function assigns one natural number to each pair of natural numbers
+The Cantor pairing function is a pairing function&lt;/p&gt;
+
+&lt;p&gt;$$π:N×N→N$$&lt;/p&gt;
+
+&lt;p&gt;defined by&lt;/p&gt;
+
+&lt;p&gt;$$π(k_1,k_2):=\frac{(k_1+k_2)(k_1+k_2+1)}{2}+k_2.$$&lt;/p&gt;
+
+&lt;p&gt;When we apply the pairing function to $k_1$ and $k_2$ we often denote the resulting number as $⟨k_1,k_2⟩$.&lt;/p&gt;
+
+&lt;p&gt;This definition can be inductively generalized to the Cantor tuple function&lt;/p&gt;
+
+&lt;p&gt;$$π(n):N^n→N$$&lt;/p&gt;
+
+&lt;p&gt;as&lt;/p&gt;
+
+&lt;p&gt;$$π(n)(k_1,…,k_{n−1},k_n) := π(π(n−1)(k_1,…,k_{n−1}),k_n).$$&lt;/p&gt;
+</description>
+        <pubDate>Tue, 14 Oct 2014 16:27:15 +0700</pubDate>
+        <link>127.0.0.1/os/2014/10/14/math.html</link>
+        <guid isPermaLink="true">127.0.0.1/os/2014/10/14/math.html</guid>
+        
+        
+        <category>os</category>
+        
+      </item>
+    
+      <item>
+        <title>Machine Learning</title>
+        <description>&lt;h2&gt;Experiments&lt;/h2&gt;
+
+&lt;h3&gt;Evaluation metrics&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.damienfrancois.be/blog/files/modelperfcheatsheet.pdf&quot;&gt;http://www.damienfrancois.be/blog/files/modelperfcheatsheet.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Balanced Error Rate (BER)&lt;/h4&gt;
+
+&lt;h4&gt;$F_1$ score&lt;/h4&gt;
+</description>
+        <pubDate>Sat, 11 Oct 2014 16:27:15 +0700</pubDate>
+        <link>127.0.0.1/ai/2014/10/11/machine-learning.html</link>
+        <guid isPermaLink="true">127.0.0.1/ai/2014/10/11/machine-learning.html</guid>
+        
+        
+        <category>ai</category>
+        
+      </item>
+    
+      <item>
+        <title>Spark</title>
+        <description>&lt;h2&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/spark.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;2010 - now&lt;/code&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Matei_Zaharia&quot;&gt;&lt;code&gt;Matei Zaharia&lt;/code&gt;&lt;/a&gt;, &lt;code&gt;open-source&lt;/code&gt;, &lt;code&gt;computing framework&lt;/code&gt;, &lt;code&gt;data analytics&lt;/code&gt;, &lt;code&gt;UC Berkeley&lt;/code&gt;, &lt;code&gt;Apache&lt;/code&gt;, &lt;a href=&quot;https://blogs.apache.org/foundation/entry/the_apache_software_foundation_announces50&quot;&gt;&lt;code&gt;top-level project&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Apache Spark&lt;/strong&gt; is &lt;em&gt;a fast and general-purpose&lt;/em&gt;  &lt;strong&gt;cluster computing system&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;It provides high-level APIs in Scala, Java, and Python that make parallel jobs easy to write, and an optimized engine that supports general computation graphs. It also supports a rich set of higher-level tools including Shark (Hive on Spark), MLlib for machine learning, GraphX for graph processing, and Spark Streaming.&lt;/p&gt;
+
+&lt;h3&gt;Discovery List&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.openhub.net/p/apache-spark&quot;&gt;Spark on OpenHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AqLYda0EhWbSdEZTaHFrT3pJd0cxakRBY3d3aTFuUFE&amp;amp;font=Bevan-PotanoSans&amp;amp;maptype=toner&amp;amp;lang=en&amp;amp;height=650&quot;&gt;Big Data Timeline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AqLYda0EhWbSdEZTaHFrT3pJd0cxakRBY3d3aTFuUFE&amp;amp;font=Bevan-PotanoSans&amp;amp;maptype=toner&amp;amp;lang=en&amp;amp;height=650&quot;&gt;Berkeley Data Analysis Stack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AqLYda0EhWbSdEsxel9HdDhzTmlILU5GQV9kVW5tRlE#gid&amp;amp;font=Bevan-PotanoSans&amp;amp;maptype=toner&amp;amp;lang=en&amp;amp;height=650&quot;&gt;Apache Stack&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Very first examples&lt;/h3&gt;
+
+&lt;h4&gt;Example: Log Mining&lt;/h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// load error messages from a log into memory&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// then interactively search for various patterns&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// https://gist.github.com/ceteri/...&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// base RDD&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// time: 0&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;hdfs://192.168.64.131:8020/user/mvcorp/access_log-20141012&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// cache RDD&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// time: 0&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// transformed RDDs&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// time: 0&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;POST&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gets&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;GET&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ambaries&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ambari&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// first action&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// time     : 444s &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// result   : 201503 &lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// second action&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// time     : 0.06s&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// result   : 142961&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// third action&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// time     : 0.06s&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// result   : 58542 &lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;gets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// third action&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// time     : 0.05s&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// result   : 51936 &lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ambaries&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Example: Word Count&lt;/h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;README.md&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wc&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flatMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reduceByKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;wc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;saveAsTextFie&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;wc_out.txt&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Example: Join&lt;/h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;bash-3.2$ ./bin/spark-shell
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  &amp;#39;_/
+   /___/ .__/\_,_/_/ /_/\_\   version 1.0.0
+      /_/
+
+Using Scala version 2.10.4 (Java HotSpot(TM) 64-Bit Server VM, Java 1.6.0_65)
+Type in expressions to have them evaluated.
+Type :help for more information.
+2014-04-28 12:36:48.473 java[11284:1003] Unable to load realm info from SCDynamicStore
+Spark context available as sc.
+
+scala&amp;gt; val format = new java.text.SimpleDateFormat(&amp;quot;yyyy-MM-dd&amp;quot;)
+format: java.text.SimpleDateFormat = java.text.SimpleDateFormat@f67a0200
+
+scala&amp;gt; case class Register (d: java.util.Date, uuid: String, cust_id: String, lat: Float, lng: Float)
+defined class Register
+
+scala&amp;gt; case class Click (d: java.util.Date, uuid: String, landing_page: Int)
+defined class Click
+
+scala&amp;gt; val reg = sc.textFile(&amp;quot;reg.tsv&amp;quot;).map(_.split(&amp;quot;\t&amp;quot;)).map(
+     |  r =&amp;gt; (r(1), Register(format.parse(r(0)), r(1), r(2), r(3).toFloat, r(4).toFloat))
+     | )
+reg: org.apache.spark.rdd.RDD[(String, Register)] = MappedRDD[3] at map at &amp;lt;console&amp;gt;:21
+
+scala&amp;gt; val clk = sc.textFile(&amp;quot;clk.tsv&amp;quot;).map(_.split(&amp;quot;\t&amp;quot;)).map(
+     |  c =&amp;gt; (c(1), Click(format.parse(c(0)), c(1), c(2).trim.toInt))
+     | )
+clk: org.apache.spark.rdd.RDD[(String, Click)] = MappedRDD[7] at map at &amp;lt;console&amp;gt;:21
+
+scala&amp;gt; reg.join(clk).take(2)
+14/04/28 12:37:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14/04/28 12:37:48 WARN LoadSnappy: Snappy native library not loaded
+res0: Array[(String, (Register, Click))] = Array((81da510acc4111e387f3600308919594,(Register(Tue Mar 04 00:00:00 PST 2014,81da510acc4111e387f3600308919594,2,33.85701,-117.85574),Click(Thu Mar 06 00:00:00 PST 2014,81da510acc4111e387f3600308919594,61))), (15dfb8e6cc4111e3a5bb600308919594,(Register(Sun Mar 02 00:00:00 PST 2014,15dfb8e6cc4111e3a5bb600308919594,1,33.659943,-117.95812),Click(Tue Mar 04 00:00:00 PST 2014,15dfb8e6cc4111e3a5bb600308919594,11))))
+
+scala&amp;gt; reg.join(clk).toDebugString
+res5: String = 
+FlatMappedValuesRDD[46] at join at &amp;lt;console&amp;gt;:23 (1 partitions)
+  MappedValuesRDD[45] at join at &amp;lt;console&amp;gt;:23 (1 partitions)
+    CoGroupedRDD[44] at join at &amp;lt;console&amp;gt;:23 (1 partitions)
+      MappedRDD[36] at map at &amp;lt;console&amp;gt;:16 (1 partitions)
+        MappedRDD[35] at map at &amp;lt;console&amp;gt;:16 (1 partitions)
+          MappedRDD[34] at textFile at &amp;lt;console&amp;gt;:16 (1 partitions)
+            HadoopRDD[33] at textFile at &amp;lt;console&amp;gt;:16 (1 partitions)
+      MappedRDD[40] at map at &amp;lt;console&amp;gt;:16 (1 partitions)
+        MappedRDD[39] at map at &amp;lt;console&amp;gt;:16 (1 partitions)
+          MappedRDD[38] at textFile at &amp;lt;console&amp;gt;:16 (1 partitions)
+            HadoopRDD[37] at textFile at &amp;lt;console&amp;gt;:16 (1 partitions)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Example: Join two wordcount&lt;/h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;README.md&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rm_wc&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flatMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fiter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Spark&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cl&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;changes.txt&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cl_wc&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flatMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fiter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Spark&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;rm_wc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cl_wc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Motivation and Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;O&amp;#39;Ryan, R. (2014). Is Apache Spark the Next Big Thing in Big Data? - Dice News. [online] Dice News. Available at: &lt;a href=&quot;http://news.dice.com/2014/03/12/apache-spark-next-big-thing-big-data/&quot;&gt;http://news.dice.com/2014/03/12/apache-spark-next-big-thing-big-data/&lt;/a&gt; [Accessed 12 Mar. 2014].&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In any article or blog post, any mention of Big Data usually includes something about Hadoop. When it comes to Big Data, Apache Hadoop has been the big elephant in the room, and the release of Hadoop 2.0 in 2013 made the environment easier and more stable. But even with the inclusion of Impala for querying stored information real-time, Hadoop is still a &lt;strong&gt;batch-based system&lt;/strong&gt; that processes data in, well, &lt;strong&gt;batch mode&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’ve had an opportunity to use Apache Spark in real-world analytics since Sept. 2013. I found GraphX to be a bit buggy, but then I believe it’s still in beta. I used Scala, Python and R for developing applications on Spark and have found it to be blazingly fast. Was this on a laptop? No. It was on a high-performance computing cluster of six nodes with lots and lots of memory that also had an existing Hadoop infrastructure. &lt;/p&gt;
+
+&lt;p&gt;Would I recommend Spark to others? Yes. Spark fixes many “oversights” that I see in Hadoop. It’s fast and gets the job that I need to get done very quickly.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;MapReduce Limitations&lt;/h3&gt;
+
+&lt;p&gt;MapReduce use cases showed two major limitations:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;difficultly of programming directly in MR&lt;/li&gt;
+&lt;li&gt;performance bottlenecks, or &lt;code&gt;batch&lt;/code&gt; not fitting the use cases&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In short, MR doesn&amp;#39;t compose well for large applications. Therefore, people built specialized systems as workarounds...&lt;/p&gt;
+
+&lt;h3&gt;6 Sparkling Features&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/spark_libs.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Lighting Fast Processing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When comes to BigData processing &lt;strong&gt;speed&lt;/strong&gt; always matters. We always look for &lt;strong&gt;processing our huge data&lt;/strong&gt; as fast as possible. Spark enables applications in Hadoop clusters to run up to 100x faster in memory, and 10x faster even when running on disk. Spark makes it possible by reducing number of read/write to disc. It stores this intermediate processing data in-memory. It uses the concept of an Resilient Distributed Dataset (RDD), which allows it to transparently store data on memory and persist it to disc only it’s needed. This helps to reduce most of the disc read and write –  the main time consuming factors – of data processing.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Ease of Use as it supports multiple languages&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Spark lets you quickly write applications in &lt;strong&gt;Java&lt;/strong&gt;, &lt;strong&gt;Scala&lt;/strong&gt;, or &lt;strong&gt;Python&lt;/strong&gt;. This helps developers to create and run their applications on their familiar programming languages. It comes with a built-in set of over 80 high-level operators.We can use it interactively to query data within the shell too.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Support for Sophisticated Analytics&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In addition to simple “map” and “reduce” operations, Spark supports &lt;strong&gt;SQL queries&lt;/strong&gt;, &lt;strong&gt;streaming data&lt;/strong&gt;, and &lt;strong&gt;complex analytics&lt;/strong&gt; such as &lt;strong&gt;machine learning&lt;/strong&gt; and &lt;strong&gt;graph algorithms&lt;/strong&gt; out-of-the-box. Not only that, users can combine all these capabilities seamlessly in a single workflow.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4. Real time stream processing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Spark can handle &lt;strong&gt;real time streaming&lt;/strong&gt;. Map-reduce mainly handles and process the data stored already. However Spark can also manipulate data in real time using Spark Streaming. Not ignoring that there are other frameworks with their integration we can handle streaming in Hadoop.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5. Ability to integrate with Hadoop and existing HadoopData&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Spark can run &lt;strong&gt;independently&lt;/strong&gt;. Apart from that it can run on &lt;strong&gt;Hadoop 2’s YARN&lt;/strong&gt; cluster manager, and can read any existing Hadoop data. That’s a BIG advantage! It can read from any Hadoop data sources for example &lt;strong&gt;HBase&lt;/strong&gt;, &lt;strong&gt;HDFS&lt;/strong&gt; etc. This feature of Spark makes it suitable for migration of existing pure Hadoop applications, if that application use-case is really suiting Spark. As Spark is using immutability more all scenarios might not be suitable for migration.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6. Active and expanding Community&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Apache Spark is built by a wide set of developers from over &lt;strong&gt;50 companies&lt;/strong&gt;. The project started in 2009 and as of now more than &lt;strong&gt;250 developers&lt;/strong&gt; have contributed to Spark already! It has active mailing lists and JIRA for issue tracking&lt;/p&gt;
+
+&lt;h2&gt;Spark Architecture&lt;/h2&gt;
+
+&lt;h3&gt;Goal and overview&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Our goal is to provide &lt;strong&gt;an abstraction&lt;/strong&gt; that supports &lt;strong&gt;applications with working sets&lt;/strong&gt; (i.e., applications that reuse an intermediate result in multiple parallel operations) while &lt;strong&gt;preserving&lt;/strong&gt; the &lt;strong&gt;attractive properties of MapReduce&lt;/strong&gt; and related models: &lt;strong&gt;automatic fault tolerance&lt;/strong&gt;, &lt;strong&gt;locality-aware sheduling&lt;/strong&gt;, and &lt;strong&gt;scalability&lt;/strong&gt;. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Resilient Distributed Datasets (RDDs)&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;Resilient Distributed Datasets&lt;/code&gt; (RDD) are the &lt;code&gt;primary abstraction&lt;/code&gt; in &lt;code&gt;Spark&lt;/code&gt; - a fault-tolerant collection of elements that can be operated on in parallel&lt;/p&gt;
+
+&lt;h3&gt;RDD Properties&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;What&amp;#39;s a RDD&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;A: Distributed collection of objects on disk
+B: Distributed collection of objects in memory
+C: Distributed collection of objects in Cassandra
+
+Answer: could be any of the above!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Scientific Answer: RDD is an Interface!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Internally, each RDD is characterized by five main properties&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;1. `set of paritions` (&amp;quot;splits&amp;quot; in Hadoop)                            | 
+2. `list of dependencies` on parent RDDs                              | lineage
+3. `compute`: A function for *computing* each split                   |
+4. (Optional) `preferred location(s)` to compute each split on        + 
+    * e.g. to say that RDD is hash-partitioned                        + optiomized 
+5. (Optional) `partiononer` (hash, range)                             + execution
+    * e.g. block locations for an HDFS file                           +
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The first three &lt;code&gt;paritions&lt;/code&gt;, &lt;code&gt;dependences&lt;/code&gt;, &lt;code&gt;compute&lt;/code&gt; are provide spark which enough lineage informations to recompute any of RDDs&lt;/p&gt;
+
+&lt;p&gt;And the fourth and the fifth are &lt;code&gt;partitioner&lt;/code&gt;, &lt;code&gt;preferred locations&lt;/code&gt; which give spark more informations about how data is structured and its distributed so spark scheduler and optimize the program better to reduce demanded i/o and network i/o needed&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Example HadoopRDD&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;paritions&lt;/em&gt; = one per HDFS block&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;dependencies&lt;/em&gt; = none&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;compute(part)&lt;/em&gt; = read corresponding block&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;preferredLocations(part)&lt;/em&gt; = HDFS block location&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;partitioner&lt;/em&gt; = none&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example FilteredHDD&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;paritions&lt;/em&gt; = same as parent RDD &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;dependencies&lt;/em&gt; = &amp;quot;one-to-one&amp;quot; on parent&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;compute(part)&lt;/em&gt; = compute parent and filter it &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;preferredLocations(part)&lt;/em&gt; = none (ask parent) &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;partitioner&lt;/em&gt; = none&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;JoinedRDD&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;paritions&lt;/em&gt; = one per reduce task &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;dependencies&lt;/em&gt; = &amp;quot;shuffle&amp;quot; on each parent &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;compute(partition)&lt;/em&gt; = read and join shuffled data &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;preferredLocations(part)&lt;/em&gt; = none&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;partitioner&lt;/em&gt; = HashPartitioner(numTasks) &lt;/p&gt;
+
+&lt;h3&gt;Dependency Types&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Narrow&lt;/strong&gt; (pipeline-able) vs &lt;strong&gt;Wide&lt;/strong&gt; (shuffle)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/spark_dependency_types.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;h3&gt;Life of a Spark Application&lt;/h3&gt;
+
+&lt;h4&gt;Spark Application&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/spark_application.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;The big different between Spark and Hadoop MapReduce is Spark actually runs jobs or tasks in threads in thread-pool on each of Executors where Hadoop MapReduce runs tasks in higher hole in highway using processes.&lt;/p&gt;
+
+&lt;h3&gt;Job Scheduling Process&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/spark_job_scheduling.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;h4&gt;DAG Scheduler&lt;/h4&gt;
+
+&lt;p&gt;Input: RDD and partitions to compute&lt;/p&gt;
+
+&lt;p&gt;Output: output from actions on those partitions&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Roles&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Build stages of tasks&lt;/li&gt;
+&lt;li&gt;Submit them to lower level scheduler (e.g. YARN, Mesos, Standalone) as ready&lt;/li&gt;
+&lt;li&gt;Lower level scheduler will schedule data based on locality&lt;/li&gt;
+&lt;li&gt;Resubmit failed stages if outputs are lost&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Scheduler Optimizations&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/spark_scheduler_optimization.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;h4&gt;Task&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Unit of work to execute on in an executor thread&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Unlike MR, there is no &amp;quot;map&amp;quot; vs &amp;quot;reduce&amp;quot; task&lt;/p&gt;
+
+&lt;p&gt;Each task either partitions its output for &amp;quot;shuffle&amp;quot;, or send the output back to the driver&lt;/p&gt;
+
+&lt;h4&gt;Shuffe&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/spark_shuffle_1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/spark_shuffle_2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;h2&gt;Spark Programming&lt;/h2&gt;
+
+&lt;h3&gt;SparkContext&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;First thing&lt;/code&gt; that a &lt;code&gt;Spark program&lt;/code&gt; does is create &lt;code&gt;SparkContext&lt;/code&gt; object, which tells Spark &lt;code&gt;how to access&lt;/code&gt; a cluster.
+
+&lt;ul&gt;
+&lt;li&gt;In the shell for either Scala or Python, this is the sc variable, which is created automatically&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Other programs&lt;/code&gt; must use a constructor to instantiate a &lt;code&gt;new SparkContext&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Then in turn &lt;code&gt;SparkContext&lt;/code&gt; gets used to create &lt;code&gt;other variables&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Master&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code&gt;master&lt;/code&gt; parameter for a &lt;code&gt;SparkContext&lt;/code&gt; determines which cluster to use&lt;/p&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;master&lt;/th&gt;
+&lt;th style=&quot;text-align: center&quot;&gt;description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;local&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;run Spark locally which one worker thread (no parallelism)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;local[K]&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;run Spark locally with K worker threads (ideally set to #cores)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;spark://HOST:PORT&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;connect to a Spark standalone cluster&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mesos://HOST:PORT&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;connect to a Mesos cluster&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3&gt;Clusters&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://spark.apache.org/docs/latest/img/cluster-overview.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Spark applications run as independent sets of processes on a cluster, coordinated by the SparkContext object in your main program (called the driver program).&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Specifically, to run on a cluster, the &lt;code&gt;SparkContext&lt;/code&gt; can connect to several types of &lt;code&gt;cluster managers&lt;/code&gt; (either Spark’s own standalone cluster manager or Mesos/YARN), which &lt;code&gt;allocate resources&lt;/code&gt; across applications.&lt;/li&gt;
+&lt;li&gt;Once connected, Spark acquires &lt;code&gt;executors&lt;/code&gt; on nodes in the cluster, which are processes that &lt;code&gt;run computations&lt;/code&gt; and &lt;code&gt;store data&lt;/code&gt; for your application.&lt;/li&gt;
+&lt;li&gt;Next, it sends your &lt;code&gt;application code&lt;/code&gt; (defined by JAR or Python files passed to SparkContext) to the &lt;code&gt;executors&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Finally, SparkContext sends &lt;code&gt;tasks&lt;/code&gt; for the &lt;code&gt;executors&lt;/code&gt; to run.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;RDD&lt;/h3&gt;
+
+&lt;p&gt;Resilient Distributed Datasets (RDD) are the primary abstraction in Spark - a fault-tolerant collection of elements that can be operated on in parallel&lt;/p&gt;
+
+&lt;h3&gt;RDD Actions&lt;/h3&gt;
+
+&lt;h5&gt;&lt;strong&gt;&lt;code&gt;transformations&lt;/code&gt;&lt;/strong&gt;&lt;/h5&gt;
+
+&lt;p&gt;Transformations create a new dataset from an existing one&lt;/p&gt;
+
+&lt;p&gt;All transformations in Spark are &lt;code&gt;lazy&lt;/code&gt;: they do not compute their results right away - instead they remember the transformations applied to some base dataset&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;optimize the required calculations&lt;/li&gt;
+&lt;li&gt;recover from lost data partitions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;API&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;map(func)&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;filter(func)&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;flatMap(func)&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;sample(withReplacement, fraction, seed) &lt;/li&gt;
+&lt;li&gt;union(otherDataset)&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;distinct([numTasks])&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5&gt;&lt;strong&gt;&lt;code&gt;actions&lt;/code&gt;&lt;/strong&gt;&lt;/h5&gt;
+
+&lt;p&gt;Actions, which &lt;code&gt;return a value&lt;/code&gt; to the driver program after running a computation on the dataset. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;API&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;reduce(func)&lt;/li&gt;
+&lt;li&gt;collect()&lt;/li&gt;
+&lt;li&gt;count()&lt;/li&gt;
+&lt;li&gt;first()&lt;/li&gt;
+&lt;li&gt;take(n)&lt;/li&gt;
+&lt;li&gt;takeSample(withReplacement, fraction, seed)&lt;/li&gt;
+&lt;li&gt;saveAsTextFile(path)&lt;/li&gt;
+&lt;li&gt;saveAsSequenceFile(path)&lt;/li&gt;
+&lt;li&gt;countByKey()&lt;/li&gt;
+&lt;li&gt;foreach(func)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Sample&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;README.md&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;words&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flatMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;words&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reducebykey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;collect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foreach&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;collect&lt;/code&gt;, &lt;code&gt;foreach&lt;/code&gt; are actions&lt;/p&gt;
+
+&lt;h3&gt;&lt;strong&gt;Persistence&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Spark can &lt;code&gt;persist&lt;/code&gt; (or &lt;code&gt;cache&lt;/code&gt;) a dataset in memory across operations&lt;/p&gt;
+
+&lt;p&gt;Each node stores in memory any slices of it that it computes and reuses them in other action on that dataset - often making future actions more than 10x faster.&lt;/p&gt;
+
+&lt;p&gt;The cache is &lt;code&gt;fault-tolerant&lt;/code&gt;: if any partition of an RDD is lost, it will automatically be recomputed using the transformations that originally created it.&lt;/p&gt;
+
+&lt;p&gt;transformations: &lt;code&gt;MEMORY_ONLY&lt;/code&gt;, &lt;code&gt;MEMORY_AND_DISK&lt;/code&gt;, &lt;code&gt;MEMORY_ONLY_SER&lt;/code&gt;, &lt;code&gt;MEMORY_AND_DISK_SER&lt;/code&gt;, &lt;code&gt;DISK_ONLY&lt;/code&gt;, &lt;code&gt;MEMORY_ONLY_2&lt;/code&gt;, &lt;code&gt;MEMORY_AND_DISK_2&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3&gt;Shared Variables&lt;/h3&gt;
+
+&lt;h4&gt;Broadcast Variables&lt;/h4&gt;
+
+&lt;p&gt;Broadcast variables let programmer keep a read-only variable cached on each machine rather than shipping a copy of it with tasks.&lt;/p&gt;
+
+&lt;p&gt;For example, to give every node a copy of a large input dataset efficiently&lt;/p&gt;
+
+&lt;p&gt;Spark also attempts to distribute broadcast variables using efficient broadcast algorithms to reduce communication cost.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;val boardcastVar = sc.broadcast(Array(1, 2, 3))
+boardcastvar.value
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Accumulators&lt;/h4&gt;
+
+&lt;p&gt;Accumulators are variables that can only be &amp;#39;added&amp;#39; to through an &lt;code&gt;associative&lt;/code&gt; operation.&lt;/p&gt;
+
+&lt;p&gt;Used to implement counters and sums, efficiently in parallel&lt;/p&gt;
+
+&lt;p&gt;Spark natively supports accumulators of numeric value types and standard mutable collections, and programmers can extend for new types.&lt;/p&gt;
+
+&lt;p&gt;Only the driver program can read an accumulators&amp;#39;s value, not the tasks.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;accum&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;accumulator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parallelize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;err&quot;&gt;2&lt;/span&gt;, &lt;span class=&quot;err&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;err&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foreach&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;accum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;accum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// driver-side&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Storage Systems&lt;/h3&gt;
+
+&lt;p&gt;Spark can create &lt;code&gt;RDDs&lt;/code&gt; from any &lt;code&gt;file stored in HDFS&lt;/code&gt; or other storage systems supported by Hadoop, e.g., &lt;code&gt;local file system&lt;/code&gt;, &lt;code&gt;Amazone S3&lt;/code&gt;, &lt;code&gt;Hypertable&lt;/code&gt;, &lt;code&gt;Hbase&lt;/code&gt;,..&lt;/p&gt;
+
+&lt;p&gt;Spark supports tet files, SequenceFiles, and any other Hadoop InputFormat, and can also take a directory or a glob (e.g. /data/201404*)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/rdd_files.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;load HDFS file to RDD&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spark&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;hdfs://...&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;errors&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ERROR&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Count all the errors&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;errors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Count errors mentioning MySQL&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;errors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;MySQL&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Fetch the MySQL errors as an array of strings&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;errors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;MySQL&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;collect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;load HDFS file to HBase&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sparkConf&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SparkConf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setAppName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;HBaseTest&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SparkContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sparkConf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conf&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HBaseConfiguration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;conf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TableInputFormat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;INPUT_TABLE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Initialize hBase table if necessary&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;admin&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HBaseAdmin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;admin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isTableAvailable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tableDesc&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HTableDescriptor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;admin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;createTable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tableDesc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hBaseRDD&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newAPIHadoopRDD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;classOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;TableInputFormat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;classOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;org.apache.hadoop.hbase.io.ImmutableBytesWritable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;classOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;org.apache.hadoop.hbase.client.Result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;hBaseRDD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Spark SQL&lt;/h2&gt;
+
+&lt;p&gt;Uniform interface for data access&lt;/p&gt;
+
+&lt;h3&gt;Example&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sqlContext&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;org&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;apache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spark&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;SQLContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sqlContext._&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// define the schema using a case class&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// create an RDD of Person objects and register it as a table&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;people&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;examples/src/main/resources/people.txt&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;,&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;people&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;registerAsTable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;people&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// SQL statements can be run by using the sql methods provided by sqlContext&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;teenagers&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;SELECT name FROM people WHERE age &amp;gt;= 13 AND age &amp;lt;= 19&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// the results of SQL queries are SchemaRDDs and supprots all the&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// normal RDD operations&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// the columns of a row in the result can be accessed by ordinal&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;teenagers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Name: &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;collect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foreach&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Spark Streaming&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Spark Streaming extends the core API to allow high-throughput, fault-tolerant stream processing of live data streams.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/spark_streaming_flow.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;h3&gt;Resources&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://spark.apache.org/docs/latest/streaming-programming-guide.html&quot;&gt;http://spark.apache.org/docs/latest/streaming-programming-guide.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2011, Discretized Streams: An Efficient and Fault-Tolerant Model for Stream Processing on Large Clusters, &lt;em&gt;Matei Zaharia, Tathagata Das, Haoyuan Li, Scott Shenker, Ion Stoica University of California, Berkeley&lt;/em&gt;, &lt;a href=&quot;https://www.cs.berkeley.edu/%7Ematei/papers/2012/hotcloud_spark_streaming.pdf&quot;&gt;https://www.cs.berkeley.edu/~matei/papers/2012/hotcloud_spark_streaming.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Data can be ingested from many sources: Kafka, Flume, Twitter, ZeroMQ, TCP sockets, etc&lt;/p&gt;
+
+&lt;p&gt;Results can be pushed out to filesystems, databases, live dashboard, etc&lt;/p&gt;
+
+&lt;p&gt;Spark&amp;#39;s build-in manchine learning algorithms and graph processing algorithms can be applied to data streams&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/spark_streaming.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;h3&gt;Comparisons&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Twitter: Storm&lt;/li&gt;
+&lt;li&gt;Yahoo!: S4&lt;/li&gt;
+&lt;li&gt;Google: MillWhell&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Examples&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;streaming.NetworkWordCount&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;NetworkWordCount&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Usage: NetworkWordCount &amp;lt;hostname&amp;gt; &amp;lt;port&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;nc&quot;&gt;StreamingExamples&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setStreamingLogLevels&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// Create the context with a 1 second batch size&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sparkConf&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SparkConf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setAppName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;NetworkWordCount&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ssc&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StreamingContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sparkConf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Seconds&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// Create a socket stream on target ip:port and count the&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// words in input stream of \n delimited text (eg. generated by &amp;#39;nc&amp;#39;)&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Note that no duplication in storage level only for running locally.&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Replication necessary in distributed scenario for fault tolerance.&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ssc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;socketTextStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StorageLevel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MEMORY_AND_DISK_SER&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;words&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flatMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wordCounts&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;words&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reduceByKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;wordCounts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ssc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ssc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;awaitTermination&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;c&quot;&gt;# in on terminal run the NetworkWordCount example in Spark Streaming&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# expecting a data stream on the localhost:9999 TCP socket&lt;/span&gt;
+./bin/run-example org.apache.spark.examples.streaming.Networkwordcount localhost 9999
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;c&quot;&gt;# in another terminal use Netcat http://nc110.sourceforge.net/&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# to generte a data stream on the localhost:9999 TCP socket&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;nc -lk 9999
+hello world
+hi there fred
+what a nice world there
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Spark MLlib&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;2014&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Standark library of machine learning algorithms&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Scalable and fast&lt;/li&gt;
+&lt;li&gt;Simple development environment&lt;/li&gt;
+&lt;li&gt;Part of Apache Spark Ecosystem&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Overview&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;MLbase aims to simplify development and deployment of ML pipelines&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/spark_mlbase_mllib.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;MLOpt&lt;/strong&gt;: Autotuners for ML pipelines&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;MLI&lt;/strong&gt;: experimental API to simplify ML development&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;MLlib&lt;/strong&gt;: Spark&amp;#39;s core ML library&lt;/p&gt;
+
+&lt;h4&gt;Algorithms&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;classification: logistic regression, linear support vector machines (SVM), naive Bayes, decision trees&lt;/li&gt;
+&lt;li&gt;regression: linear regression, regression trees&lt;/li&gt;
+&lt;li&gt;collaborative filtering: alternating least squares (ALS)&lt;/li&gt;
+&lt;li&gt;clustering: k-means&lt;/li&gt;
+&lt;li&gt;optimization: stochastic gradient descent, limited-memory BFGS (L-BFGS)&lt;/li&gt;
+&lt;li&gt;dimensionality reduction: singular value decomposition (SVD), principal component analysis (PCA)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Exploiting Sparsity&lt;/h4&gt;
+
+&lt;p&gt;Sparse data is prevalent&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Text processing: bag-of-words, n-grams&lt;/li&gt;
+&lt;li&gt;Collaborative Filtering: rating matrix&lt;/li&gt;
+&lt;li&gt;Graphs: adjacency matrix&lt;/li&gt;
+&lt;li&gt;Genomics: SNPs, variant calling&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;MLlib supports sparese storage and computation&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;classification&lt;/li&gt;
+&lt;li&gt;k-means&lt;/li&gt;
+&lt;li&gt;summary statstics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Example: Exploiting sparsity: K-means&lt;/p&gt;
+
+&lt;p&gt;Traning set:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;12 million examples&lt;/li&gt;
+&lt;li&gt;500 features&lt;/li&gt;
+&lt;li&gt;sparsity: 10%&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;dense&lt;/th&gt;
+&lt;th&gt;sparse&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;storage&lt;/td&gt;
+&lt;td&gt;47GB&lt;/td&gt;
+&lt;td&gt;7GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;time&lt;/td&gt;
+&lt;td&gt;240s&lt;/td&gt;
+&lt;td&gt;58s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;40GB savings in storage, 4x speedup in computation&lt;/p&gt;
+
+&lt;h3&gt;Example&lt;/h3&gt;
+
+&lt;h4&gt;K-means: Parition points into k clusters&lt;/h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// load and parse the data&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;kmeans_data.txt&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parsedData&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;_split&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toDouble&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// cluster the data into five classes using KMeans&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clusters&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;KMeans&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parsedData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numItertions&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// compute the sum of squared erros&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cost&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clusters&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;computeCost&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parsedData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Sum of squared errors = &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cost&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Dimensionality reduction + Kmeans&lt;/h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;// compute principal components
+val points: RDD[Vector] = ...
+val mat = RowMatrix(points)
+val pc = mat.computePrincipalComponents(20)
+
+// project points to a low-dimensional space
+val projected = mat.multiply(pc).rows
+
+// train a k-means model on the projected data
+val model = KMeans.train(projected, 10)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Roadmap&lt;/h3&gt;
+
+&lt;h2&gt;GraphX&lt;/h2&gt;
+
+&lt;p&gt;Extends the distributed fault-tolerant collections API and interactive console of Spark with a new graph API which leverages recent advances in graph systems (e.g., GraphLab to enable users to easily and interactively build, transform, and reason about graph structured data at scale.&lt;/p&gt;
+
+&lt;h2&gt;Advaced Topic&lt;/h2&gt;
+
+&lt;p&gt;Other &lt;strong&gt;BDAS&lt;/strong&gt; projects running atop Spark for graphs, sampling, and memory sharing&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;BlinkDB, &lt;a href=&quot;http://blinkdb.org&quot;&gt;http://blinkdb.org&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;massively parallel, approximate query engine for running interactive SQL queries on large volumes of data&lt;/em&gt;, allows users to trade-off query accuracy for response time, enables interactive queires over massive data by running queries on data samples, presents results annotated with meaning full error bars.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Tachyon, &lt;a href=&quot;http://tachyon-project.org/&quot;&gt;http://tachyon-project.org/&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;fault tolerant distributed file system enabling reliable file sharing at memory-speed across cluster framework&lt;/li&gt;
+&lt;li&gt;achieves high performance by leveraging lineage information and using memory aggressively&lt;/li&gt;
+&lt;li&gt;caches working set files in memory thereby avoiding going to disk to load datasets that are frequently read&lt;/li&gt;
+&lt;li&gt;enables diffrent jobs/queries and frameworks to access cached files at memory speed.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Spark in Production&lt;/h2&gt;
+
+&lt;p&gt;In the following, let&amp;#39;s consider the progression through a full software development lifecycle, step by step:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Installing&lt;/li&gt;
+&lt;li&gt;build&lt;/li&gt;
+&lt;li&gt;deploy&lt;/li&gt;
+&lt;li&gt;monitor&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;Installing&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;: Install Java JDK 6/7&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;http://oracle.com/technetwork/java/javase/downloads/jdk7-downloads-188026.html
+sudo apt-get -y install openjdk-7-jdk
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;: Download Spark&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;http://spark.apache.org/downloads.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;: Run Spark Shell&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# run spark shell
+./bin/spark-shell
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt;: Play with simple example&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10000&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;an&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RDD&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;based&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;that&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;distData&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parallelize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;values&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;less&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;than&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;distData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;collect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Build&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;build/run a JAR using Java + Maven&lt;/li&gt;
+&lt;li&gt;SBT primer&lt;/li&gt;
+&lt;li&gt;build/run a JAR using Scala + SBT&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Build/run a JAR using Java + Maven&lt;/h4&gt;
+
+&lt;h4&gt;SBT Primer&lt;/h4&gt;
+
+&lt;p&gt;SBT is the &lt;strong&gt;S&lt;/strong&gt;imple &lt;strong&gt;B&lt;/strong&gt;uild &lt;strong&gt;T&lt;/strong&gt;ool for Scala&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.scala-sbt.org/&quot;&gt;http://www.scala-sbt.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is included with the Spark download, and does not need to be installed separately&lt;/p&gt;
+
+&lt;p&gt;Similar to Maven, however it provides for &lt;em&gt;incremental compilation&lt;/em&gt; and an &lt;em&gt;interactive shell&lt;/em&gt;, among other innovations.&lt;/p&gt;
+
+&lt;p&gt;SBT project uses StackOverflow for Q&amp;amp;A, that&amp;#39;s a good resource to study further &lt;a href=&quot;http://stackoverflow.com/tags/sbt&quot;&gt;http://stackoverflow.com/tags/sbt&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Workflow&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The following sequence shows how to build a JAR file from a Scala app, using SBT&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;First, this requires the &amp;quot;source&amp;quot; download, not the &amp;quot;binary&amp;quot;&lt;/li&gt;
+&lt;li&gt;Connect into the &lt;code&gt;SPARK_HOME&lt;/code&gt; directory&lt;/li&gt;
+&lt;li&gt;Then run the following commands&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# Scala source + SBT build script on following slides
+
+cd simple-app
+
+../sbt/sbt -Dsbt.ivy.home=../sbt/ivy package
+
+../spark/bin/spark-summit \
+    --class &amp;quot;SimpleApp&amp;quot;  \
+    --master local[*] \
+    target/scala-2.10/simple-project_2.10-1.0.jar
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Build/run a JAR using Scala + SBT&lt;/h4&gt;
+
+&lt;h3&gt;Deploy&lt;/h3&gt;
+
+&lt;p&gt;Deploy JAR to Hadoop cluster, using these alternatives:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Run atop Apache Mesos&lt;/li&gt;
+&lt;li&gt;Install on CM&lt;/li&gt;
+&lt;li&gt;Run on HDP&lt;/li&gt;
+&lt;li&gt;Run on MapR&lt;/li&gt;
+&lt;li&gt;Run on EC2&lt;/li&gt;
+&lt;li&gt;Using SIMR (run shell within MR job)&lt;/li&gt;
+&lt;li&gt;... or, simple run the JAR on YARN &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Example&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Running on YARN&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;./bin/spark-submit --class path.to.your.Class -master yarn-cluster &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;options&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &amp;lt;app jar&amp;gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;app options&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;./bin/spark-submit --class org.apache.spark.examples.SparkPi \
+    --master yarn-cluster \
+    --num-executors 3 \
+    --driver-memory 4 \
+    --executor-memory 2g \
+    --lib/spark-examples*.jar
+    10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Monitor&lt;/h3&gt;
+
+&lt;h4&gt;Performance Debugging&lt;/h4&gt;
+
+&lt;p&gt;Distributed performance: program slow due to scheduling, coordination, or data distribution&lt;/p&gt;
+
+&lt;p&gt;Local performance: program slow because whatever I&amp;#39;m running is just slow on a single node&lt;/p&gt;
+
+&lt;p&gt;Two usefule tools:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Application Web UI (default port 4040)&lt;/li&gt;
+&lt;li&gt;Executor logs (spark/work)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Find Slow Stage(s)&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/spark_find_slow_stage.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;h4&gt;Stragglers&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/spark_stragglers.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/spark_stragglers_executor.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;h4&gt;Stragglers due to slow nodes&lt;/h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// strugglers due to slow nodes&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parallelize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; 
+    &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;host&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;net&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;InetAddress&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getLocalHost&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getHostName&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;host&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;ip-172-31-2-222&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Turn speculation on to mitigates this problem.&lt;/p&gt;
+
+&lt;p&gt;Speculation: Spark identifies slow tasks (by looking at runtime distribution), and re-launches those tasks on other nodes)&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;spark.specualtion true
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Stragglers due to data skew&lt;/h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parallelize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flatMap&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Speculation is not going to help beacause the problem is inherent in the algorithm/data&lt;/p&gt;
+
+&lt;p&gt;Pick a different algorithm or restructure the data&lt;/p&gt;
+
+&lt;h4&gt;Tasks are just slow&lt;/h4&gt;
+
+&lt;h5&gt;Garbage collection&lt;/h5&gt;
+
+&lt;p&gt;Look at the GC time&lt;/p&gt;
+
+&lt;h5&gt;Performance of the code running in each task&lt;/h5&gt;
+
+&lt;h5&gt;jmap: heap analysis&lt;/h5&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;jmap -histo [pid]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Get a histogram of objects in the JVM heap&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;jmap -histo:live [pid]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Get a histogram of objects in the heap after GC (thus &amp;quot;live&amp;quot;)&lt;/p&gt;
+
+&lt;h5&gt;Reduce GC impact&lt;/h5&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;class DummyObject(var i: Int) {
+    def toInt = i
+}
+
+sc.parallelize(1 to 100 * 1000 * 1000, 1).map { i =&amp;gt;
+    new Dummyobject(i) // new object every record
+    obj.toInt
+}
+
+sc.parallelize(1 to 100 * 1000 * 1000, 1).mapPartitions { iter =&amp;gt; 
+    val obj = new Dummyobject(0) // reuse the same object
+    iter.map { i =&amp;gt;
+        obj.i = i
+        obj.toInt
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Local Performance&lt;/h4&gt;
+
+&lt;p&gt;Each Spark executor runs a JVM/Python process&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;jstack&lt;/code&gt;, &lt;code&gt;YourKit&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Run in local mode (i.e. Spark master &amp;quot;local&amp;quot;) and debug with your favorite debugger&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;IntelJ&lt;/li&gt;
+&lt;li&gt;Eclipse&lt;/li&gt;
+&lt;li&gt;println
+## Case Studies&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Spark at Twitter: Evalution &amp;amp; Lessons Learnt, &lt;strong&gt;Sriram Krishnan&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Spark can be more iteractive, efficent than MR&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Support for iterative algorithms and caching&lt;/li&gt;
+&lt;li&gt;More generic than traidional MapReduce&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Why is Spark faster than Hadoop MapReduce&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fewer I/O synchronization barriers&lt;/li&gt;
+&lt;li&gt;Less expensive shuffle&lt;/li&gt;
+&lt;li&gt;More comple the DAG, greater the performance improvement&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Hadoop MapReduce vs Spark&lt;/h3&gt;
+
+&lt;h4&gt;Classical Example: Word Count&lt;/h4&gt;
+
+&lt;table&gt;
+
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Hadoop MapReduce&lt;/th&gt;
+&lt;th&gt;Spark&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+
+&lt;td&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;
+&lt;code&gt;
+public static class WordCountMapClass extends MapReduceBase
+    implements Mapper &lt;LongWritable, Text, Text, IntWritable&gt; {
+        private final static IntWritable = new IntWritable[1];
+        private Text word = new Text();
+
+        public void map(LongWritable key, Text value,
+                        OutputColectorText&lt;Text, IntWritable&gt; output,
+                        Reporter reporter) throws IOException {
+            String line = value.toString();
+            StringTokenizer iter = new Stringtokenizer(line);
+            while (itr.hasMoreTokens()) {
+                word.set(itr.nextToken());
+                output.collect(word, one);
+            }
+        }
+    }
+
+public static class WordCountReduce extends MapReduceBase
+    implements Reducer &lt;Text, IntWritable, Text, IntWritable&gt; {
+        public void reduce(Text key, Iterator&lt;IntWritable&gt; values,
+                            OutputCollector &lt;Text, IntWritable&gt; output,
+                            Reporter reporter throws IOException {
+            int run = 0;
+            while (values.hasNext()){
+                sum += values.next().get();
+            }
+            output.collect(key, new Intwritable(sums);
+        }
+    }
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;
+&lt;code&gt;
+val spark = new SparkContext(master, appName, [sparkHome], [jars])
+val file = spark.textFile(&quot;hdfs://..&quot;)
+val counts = file.flatMap(line =&gt; line.split(&quot; &quot;))
+                 .map(word =&gt; (word, 1)
+                 .reduceByKey(_ + _)
+counts.saveAsTextFile(&quot;hdfs://...);
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;/tbody&gt;
+
+&lt;/table&gt;
 </description>
         <pubDate>Thu, 09 Oct 2014 16:27:15 +0700</pubDate>
-        <link>http://github.com/rain1024/big-data/2014/10/09/spark.html</link>
-        <guid isPermaLink="true">http://github.com/rain1024/big-data/2014/10/09/spark.html</guid>
+        <link>127.0.0.1/data/2014/10/09/spark.html</link>
+        <guid isPermaLink="true">127.0.0.1/data/2014/10/09/spark.html</guid>
         
         
-        <category>big-data</category>
+        <category>data</category>
         
       </item>
     
@@ -177,11 +1696,11 @@
 &lt;/tbody&gt;&lt;/table&gt;
 </description>
         <pubDate>Tue, 30 Sep 2014 00:11:15 +0700</pubDate>
-        <link>http://github.com/rain1024/vim/2014/09/30/vim.html</link>
-        <guid isPermaLink="true">http://github.com/rain1024/vim/2014/09/30/vim.html</guid>
+        <link>127.0.0.1/tools/2014/09/30/vim.html</link>
+        <guid isPermaLink="true">127.0.0.1/tools/2014/09/30/vim.html</guid>
         
         
-        <category>vim</category>
+        <category>tools</category>
         
       </item>
     
@@ -203,7 +1722,13 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;bower install angular-ui-router --save
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4&gt;Use&lt;/h4&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;go&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;resource&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;err&quot;&gt;\\&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;include&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myApp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;angular&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;myApp&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;ui.router&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;\\&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;routing&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;\\&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;changeg&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;$state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;go&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;resource&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;&lt;a href=&quot;http://ngmodules.org/modules/http-auth-interceptor&quot;&gt;angular-http-auth&lt;/a&gt;&lt;/h3&gt;
 
@@ -327,23 +1852,24 @@ bower install highcharts-ng --save
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;1, 2, 3&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// [1, 3]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Tue, 30 Sep 2014 00:11:15 +0700</pubDate>
-        <link>http://github.com/rain1024/angular/2014/09/30/angular.html</link>
-        <guid isPermaLink="true">http://github.com/rain1024/angular/2014/09/30/angular.html</guid>
+        <link>127.0.0.1/web/2014/09/30/angular.html</link>
+        <guid isPermaLink="true">127.0.0.1/web/2014/09/30/angular.html</guid>
         
         
-        <category>angular</category>
+        <category>web</category>
         
       </item>
     
       <item>
         <title>Web Designer</title>
-        <description></description>
+        <description>&lt;p&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2013/10/02/powerful-workflow-tips-tools-and-tricks-for-web-designers/&quot;&gt;Powerful Workflow Tips, Tools And Tricks For Web Designers&lt;/a&gt;&lt;/p&gt;
+</description>
         <pubDate>Mon, 29 Sep 2014 16:27:15 +0700</pubDate>
-        <link>http://github.com/rain1024/design/2014/09/29/web-designer.html</link>
-        <guid isPermaLink="true">http://github.com/rain1024/design/2014/09/29/web-designer.html</guid>
+        <link>127.0.0.1/web/2014/09/29/web-designer.html</link>
+        <guid isPermaLink="true">127.0.0.1/web/2014/09/29/web-designer.html</guid>
         
         
-        <category>design</category>
+        <category>web</category>
         
       </item>
     
@@ -356,11 +1882,11 @@ bower install highcharts-ng --save
 &lt;p&gt;&lt;a href=&quot;&quot;&gt;http://www.geekmind.net/2011/01/shortcuts-to-improve-your-bash-zsh.htm&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 29 Sep 2014 16:27:15 +0700</pubDate>
-        <link>http://github.com/rain1024/ubuntu/2014/09/29/ubuntu.html</link>
-        <guid isPermaLink="true">http://github.com/rain1024/ubuntu/2014/09/29/ubuntu.html</guid>
+        <link>127.0.0.1/os/2014/09/29/ubuntu.html</link>
+        <guid isPermaLink="true">127.0.0.1/os/2014/09/29/ubuntu.html</guid>
         
         
-        <category>ubuntu</category>
+        <category>os</category>
         
       </item>
     
@@ -374,38 +1900,11 @@ bower install highcharts-ng --save
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;jekyll serve -w
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Mon, 29 Sep 2014 16:27:15 +0700</pubDate>
-        <link>http://github.com/rain1024/jekyll/2014/09/29/jekyll.html</link>
-        <guid isPermaLink="true">http://github.com/rain1024/jekyll/2014/09/29/jekyll.html</guid>
+        <link>127.0.0.1/tools/2014/09/29/jekyll.html</link>
+        <guid isPermaLink="true">127.0.0.1/tools/2014/09/29/jekyll.html</guid>
         
         
-        <category>jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 27 Sep 2014 00:11:15 +0700</pubDate>
-        <link>http://github.com/rain1024/jekyll/update/2014/09/27/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://github.com/rain1024/jekyll/update/2014/09/27/welcome-to-jekyll.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>tools</category>
         
       </item>
     

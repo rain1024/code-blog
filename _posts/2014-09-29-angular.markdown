@@ -2,7 +2,7 @@
 layout: post
 title:  "Angular"
 date:   2014-09-29 17:11:15
-categories: angular
+categories: web 
 ---
 
 ## Workflow
@@ -27,6 +27,12 @@ bower install angular-ui-router --save
 #### Use
 
 ```js
+\\ include
+var myApp = angular.module('myApp', ['ui.router']);
+
+\\ routing
+
+\\ changeg state
 $state.go("resource")
 ```
 

@@ -1,0 +1,75 @@
+---
+layout: post
+title:  "Layout"
+date:   2014-11-1 17:11:15
+categories: 
+---
+
+## Heading
+
+<h2>H2</h2>
+<h3>H3</h3>
+<h4>H4</h4>
+<h5>H5</h5>
+
+## Paragraph
+
+Amet ipsum vitae accusamus nobis dolorem nobis est distinctio commodi. Deleniti repellendus eligendi nemo amet enim nulla doloribus hic. Expedita mollitia veritatis minus quidem ipsam? Quam fugiat neque quod magni.
+
+**Bold text here Amet ipsum vitae accusamus nobis dolorem nobis est distinctio commodi**. Deleniti repellendus eligendi nemo amet enim nulla doloribus hic. Expedita mollitia veritatis minus quidem ipsam? Quam fugiat neque quod magni.
+
+*Italic text here Amet ipsum vitae accusamus nobis dolorem nobis est distinctio commodi*. Deleniti repellendus eligendi nemo amet enim nulla doloribus hic. Expedita mollitia veritatis minus quidem ipsam? Quam fugiat neque quod magni.
+
+This is an [example link](http://example.com/).
+
+> block quote Lorem suscipit corrupti id ducimus reiciendis odit voluptatibus suscipit est facere, vel, maxime neque perspiciatis placeat laborum aspernatur est sequi? Minus consequuntur ab ipsum architecto dignissimos magnam aut nobis delectus!
+
+~~Mistaken text.~~
+
+## List
+
+* Candy.
+* Gum.
+* Booze.
+
+1. Red
+2. Green
+3. Blue
+
+* A list item.
+  * With multiple paragraphs.
+* Another item in the list.
+
+## Table
+
+|  Example           |    data        |
+|--------------------|----------------|
+|  aaaa              | bbbb           |
+|  cccc              | dddd           |
+|  eeee              | ffff           |
+
+## Code 
+
+```c
+include <stdlib.h>
+#include <stdio.h>
+
+int main()
+{
+	printf("Hello World\n");
+	return 0;
+}
+```
+
+```
+```
+
+## Math
+
+formular
+
+$$x^2 + 2x + 1 = 0$$
+
+inline math
+
+$x^2 + 2x + 1$
